@@ -12,6 +12,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+
     <title>시그니처베드 클론코딩</title>
   </head>
 
@@ -19,15 +21,16 @@
     <div id="wrap">
       <div class="scroll-header-wrap">
         <header>
-          <h1 class="main_logo">
+          <h1 class="main-logo">
             <img src="img/logo-light.svg" alt="상단메인로고" />
+            <img src="img/logo.svg" alt="상단메인로고" />
           </h1>
           <nav class="gnb">
-            <ul class="mainmenu">
+            <ul class="main-menu">
               <li><a href="#">HOME</a></li>
               <li>
                 <a href="#">COLLECTION</a>
-                <ul class="submenu1">
+                <ul class="submenu">
                   <li><a href="#">시그니처 베이직</a></li>
                   <li><a href="#">시그니처 G2</a></li>
                   <li><a href="#">시그니처 액티브</a></li>
@@ -35,7 +38,7 @@
               </li>
               <li>
                 <a href="#">PRODUCT</a>
-                <ul class="submenu2">
+                <ul class="submenu">
                   <li><a href="#">토퍼</a></li>
                   <li><a href="#">토퍼매트리스[일체형]</a></li>
                   <li><a href="#">토퍼매트리스[접이식]</a></li>
@@ -48,54 +51,162 @@
               <li><a href="#">NOTICE</a></li>
             </ul>
           </nav>
-          <div class="snb_sns">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
+          <div class="sns-icon-group">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
         </header>
       </div>
       <!-- scroll-header-wrap -->
-      <section class="content-1">
+      <section class="slide-banner">
         <img src="img/main_banner_01.jpg" alt="메인배너이미지" />
         <!-- <img src="img/main_banner_02.jpg" alt="메인배너이미지" />
         <img src="img/main_banner_03.jpg" alt="메인배너이미지" /> -->
       </section>
-      <section class="content-2">
-        <div class="content-1-left">
-          <h2>The best foam</h2>
-          <h3>최상의 폼</h3>
-          <h2>Optimal layer</h2>
-          <h3>최적의 비율</h3>
-          <h2>Perfect sleep</h2>
-          <h3>완벽한 숙면</h3>
-        </div>
-        <div class="content-1-right">
-          <img src="img/youtube_img.jpg" alt="유튜브이미지" />
-          <div class="content-1-right-playbtn">
-            <span>
-              <a href="https://youtu.be/3xfTtMlKcWs" class="youtube-btn"
-                ><i class="fa fa-play"></i
-              ></a>
-            </span>
+      <section class="youtube-container">
+        <div class="youtube-txt">
+          <div class="fancy-title">
+            <h2>The best foam</h2>
+            <h3>최상의 폼</h3>
+            <h2>Optimal layer</h2>
+            <h3>최적의 비율</h3>
+            <h2>Perfect sleep</h2>
+            <h3>완벽한 숙면</h3>
+          </div>
+          <div class="bg-youtube">
+            <img src="img/youtube_img.jpg" alt="유튜브이미지" />
+            <div class="bg-youtube-playbtn">
+              <span>
+                <a href="https://youtu.be/3xfTtMlKcWs" class="youtube-btn"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </span>
+            </div>
           </div>
         </div>
       </section>
-      <section class="content-3">
+      <section class="collection-list">
         <h2>COLLECTION</h2>
-        <div class="content-3-left">
-          <img src="img/collection_img01.jpg" alt="시그니처베이직이미지" />
-          <div class="content-3-left-txt">
-            <h3><img src="img/logo_basic_w.svg" alt="시그니처베이직로고" /></h3>
-            <p>똑똑한 사람들의 합리적인 선택</p>
+        <div class="collection-list-wrap">
+          <div class="clist-left">
+            <img src="img/collection_img01.jpg" alt="베이직이미지" />
+            <div class="clist-lt-txt">
+              <h3><img src="img/logo_basic_w.svg" alt="베이직로고" /></h3>
+              <p>똑똑한 사람들의 합리적인 선택</p>
+            </div>
+          </div>
+
+          <div class="clist-right-top">
+            <img src="img/collection_img02.jpg" alt="액티브이미지" />
+            <div class="clist-rt-top-txt">
+              <h3><img src="img/logo_active_w.svg" alt="액티브로고" /></h3>
+              <p>유능한 사람들의 고급스러운 선택</p>
+            </div>
+          </div>
+          <div class="clist-right-btm">
+            <img src="img/collection_img03.jpg" alt="g2이미지" />
+            <div class="clist-rt-btm-txt">
+              <h3><img src="img/logo_g2_w.svg" alt="g2로고" /></h3>
+              <p>열정적인 사람들의 탁월한 선택</p>
+            </div>
           </div>
         </div>
-
-        <div class="content-3-right"></div>
       </section>
-      <section class="content-4"></section>
-      <section class="content-5"></section>
-      <section class="content-6"></section>
-      <footer></footer>
+      <section class="products-list">
+        <h2>PRODUCTS</h2>
+        <div class="products-list-wrap">
+          <div class="plist-left">
+            <img src="img/products_img01.jpg" alt="topper이미지" />
+            <div class="plist-lt-txt">
+              <span class="plus">보기</span>
+              <h3>TOPPER</h3>
+            </div>
+          </div>
+          <div class="plist-center">
+            <img src="img/products_img02.jpg" alt="topper이미지" />
+            <div class="plist-ct-txt">
+              <span class="plus">보기</span>
+              <h3>
+                TOPPER <br />
+                MATTRESS
+              </h3>
+            </div>
+          </div>
+          <div class="plist-right">
+            <img src="img/products_img03.jpg" alt="topper이미지" />
+            <div class="plist-rt-txt">
+              <span class="plus">보기</span>
+              <h3>
+                MOTION <br />
+                BED
+              </h3>
+            </div>
+          </div>
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+      <section class="lab-wrap">
+        <div class="lab-container">
+          <h2>LAB</h2>
+          <div class="lab-item-group">
+            <figure>
+              <img src="img/lab_img.gif" alt="움직이는이미지" />
+            </figure>
+            <div class="lab-top-txt">
+              <h3>
+                <img src="img/logo-light.svg" alt="브랜드로고" />
+                <span class="x-icon"></span>
+                <span>수면환경연구소</span>
+              </h3>
+              <div class="lab-btm-txt">
+                <h3>SLEEP STUDIO</h3>
+                <p>작은 것 하나까지 세심하게 고민해 만든 제품.</p>
+                <p>
+                  바라는 것은 단 하나 시그니처베드와 함께 완벽한 숙면을 하는 것.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="instagram-list">
+        <h2>Instagram</h2>
+        <div class="instagram-wrap">
+          <!-- <i class="fa fa-instagram"></i> -->
+          <div class="insta1">
+            <img src="img/instagram_1.jpg" alt="인스타그램이미지" />
+          </div>
+          <div class="insta2">
+            <img src="img/instagram_2.jpg" alt="인스타그램이미지" />
+          </div>
+          <div class="insta3">
+            <img src="img/instagram_3.jpg" alt="인스타그램이미지" />
+          </div>
+          <div class="insta4">
+            <img src="img/instagram_4.jpg" alt="인스타그램이미지" />
+          </div>
+          <div class="insta5">
+            <img src="img/instagram_5.jpg" alt="인스타그램이미지" />
+          </div>
+          <div class="insta6">
+            <img src="img/instagram_6.jpg" alt="인스타그램이미지" />
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="ft-txt">
+          <span>㈜이브자리 서울특별시 강남구 영동대로114길5 (삼성동)</span>
+          <span>대표이사 : 고춘홍, 윤종웅 </span><br />
+          <span>사업자등록번호 : 105-81-42298</span>
+          <span>통신판매업신고 : 제2009-서울강남-01376호 </span>
+          <span>연락처: 080-216-4677</span>
+          <span>이메일:evezary@evezary.co.kr</span>
+        </div>
+        <div class="copytxt">
+          <p>COPYRIGHT © SIGNATURE BED all rights reserved.</p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
