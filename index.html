@@ -11,8 +11,15 @@
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/header.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/common.js"></script>
 
     <title>시그니처베드 클론코딩</title>
   </head>
@@ -20,10 +27,13 @@
   <body>
     <div id="wrap">
       <div class="scroll-header-wrap">
+        <!-- <header class="fixed"> -->
         <header>
           <h1 class="main-logo">
-            <img src="img/logo-light.svg" alt="상단메인로고" />
-            <img src="img/logo.svg" alt="상단메인로고" />
+            <a href="#wrap"
+              ><img src="img/logo-light.svg" alt="상단메인로고"
+            /></a>
+            <!-- <a href="#wrap"></a><img src="img/logo.svg" alt="상단메인로고" /></a> -->
           </h1>
           <nav class="gnb">
             <ul class="main-menu">
@@ -58,12 +68,26 @@
         </header>
       </div>
       <!-- scroll-header-wrap -->
-      <section class="slide-banner">
-        <img src="img/main_banner_01.jpg" alt="메인배너이미지" />
-        <!-- <img src="img/main_banner_02.jpg" alt="메인배너이미지" />
-        <img src="img/main_banner_03.jpg" alt="메인배너이미지" /> -->
-      </section>
-      <section class="youtube-container">
+      <div class="main-slide-banner-wrap clear">
+        <ul class="main-slide-banner">
+          <li>
+            <a href="#"
+              ><img src="img/main_banner_01.jpg" alt="침구류이미지"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="img/main_banner_02.jpg" alt="침구류이미지"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="img/main_banner_03.jpg" alt="침구류이미지"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <section class="youtube-container clear">
         <div class="youtube-txt">
           <div class="fancy-title">
             <h2>The best foam</h2>
@@ -77,7 +101,7 @@
             <img src="img/youtube_img.jpg" alt="유튜브이미지" />
             <div class="bg-youtube-playbtn">
               <span>
-                <a href="https://youtu.be/3xfTtMlKcWs" class="youtube-btn"
+                <a href="https://youtu.be/3xfTtMlKcWs" target="_blank"
                   ><i class="fa fa-play"></i
                 ></a>
               </span>
@@ -195,16 +219,18 @@
         </div>
       </section>
       <footer>
-        <div class="ft-txt">
-          <span>㈜이브자리 서울특별시 강남구 영동대로114길5 (삼성동)</span>
-          <span>대표이사 : 고춘홍, 윤종웅 </span><br />
-          <span>사업자등록번호 : 105-81-42298</span>
-          <span>통신판매업신고 : 제2009-서울강남-01376호 </span>
-          <span>연락처: 080-216-4677</span>
-          <span>이메일:evezary@evezary.co.kr</span>
-        </div>
-        <div class="copytxt">
-          <p>COPYRIGHT © SIGNATURE BED all rights reserved.</p>
+        <div class="inner-footer">
+          <div class="footer-info">
+            <span
+              >㈜이브자리 서울특별시 강남구 영동대로114길5 (삼성동) | 대표이사 :
+              고춘홍, 윤종웅 | 사업자등록번호 : 105-81-42298 | 통신판매업신고 :
+              제2009-서울강남-01376호 | 연락처: 080-216-4677 |
+              이메일:evezary@evezary.co.kr</span
+            >
+          </div>
+          <div class="copyright">
+            <p>COPYRIGHT © SIGNATURE BED all rights reserved.</p>
+          </div>
         </div>
       </footer>
     </div>

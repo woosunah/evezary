@@ -13,10 +13,16 @@ header {
   width: 100%;
   height: 84px;
   padding: 0 32px;
-  background-color: transparent;
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
+}
+header.fixed {
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  width: 100%;
 }
 .main-logo {
   float: left;
@@ -25,9 +31,6 @@ header {
 }
 .main-logo img:nth-child(2) {
   display: none;
-}
-.main-logo img {
-  /* border: 1px solid #000; */
 }
 .gnb {
   padding: 0 15px;
@@ -38,32 +41,41 @@ header {
   font-size: 16px;
 }
 
-.gnb .main-menu li {
+.gnb .main-menu > li {
   float: left;
-  /* border: 1px solid #f00; */
-  padding: 10px 15px;
-  margin-top: 20px;
+  padding: 20px 15px;
+  margin-top: 17px;
   margin-right: 12px;
   color: rgba(255, 255, 255, 0.7);
   position: relative;
+  font-weight: bold;
 }
 
-.gnb .main-menu li:hover {
+.gnb .main-menu > li:hover {
   color: #fff;
 }
 .gnb .submenu {
-  top: 64px;
+  top: 60px;
+  left: 0;
   width: 240px;
   position: absolute;
   background: #fff;
   border-radius: 5px;
-  padding: 0 25px 20px;
+  padding: 10px 0;
 }
 .gnb .submenu li {
-  float: left;
+  padding: 15px 30px;
+  font-weight: normal;
+  /* border: 1px solid #000; */
+}
+.gnb .submenu li:hover {
+  background-color: #d7e1e9;
+}
+.gnb .submenu li:hover a {
+  color: #222;
 }
 .gnb .submenu li a {
-  color: black;
+  color: #797b86;
 }
 .gnb .main-menu .submenu {
   display: none;
@@ -74,14 +86,13 @@ header {
 
 .sns-icon-group {
   float: right;
-  margin: 20px 12px 0 0;
+  margin: 32px 12px 0 0;
   font-size: 24px;
 }
 .sns-icon-group i:first-child {
   margin-right: 12px;
 }
 
-.sns-icon-group i:after {
-  content: '';
+.sns-icon-group a:hover {
   color: #fff;
 }

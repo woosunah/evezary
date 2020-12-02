@@ -77,3 +77,11 @@ input[type='tel'] {
   border: 1px solid #aaa;
   background-color: #fff;
 }
+.clear::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.overflow-hidden {
+  overflow: hidden !important;
+}
