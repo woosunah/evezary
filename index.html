@@ -4,7 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--og tag  -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://signaturebed.co.kr/" />
+    <meta property="og:title" content="시그니처베드" />
+    <meta
+      property="og:description"
+      content="최상의 폼, 최적의 비율, 완벽한 숙면, 시그니처베드"
+    />
+    <meta
+      property="og:image"
+      content="http://signaturebed.co.kr/img/og_img.jpg"
+    />
+
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <meta
+      name="description"
+      content="최상의 폼, 최적의 비율, 완벽한 숙면 바라는 건 단 하나 시그니처베드와 함께 완벽한 숙면을 하는 것"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -26,14 +43,17 @@
 
   <body>
     <div id="wrap">
+      <div class="skipmenu">
+        <a href="#container">본문바로가기</a>
+      </div>
       <div class="scroll-header-wrap">
         <!-- <header class="fixed"> -->
         <header>
           <h1 class="main-logo">
-            <a href="#wrap"
-              ><img src="img/logo-light.svg" alt="상단메인로고"
-            /></a>
-            <!-- <a href="#wrap"></a><img src="img/logo.svg" alt="상단메인로고" /></a> -->
+            <a href="#wrap">
+              <img src="img/logo-light.svg" alt="상단메인로고" />
+              <img src="img/logo.svg" alt="상단메인로고" />
+            </a>
           </h1>
           <nav class="gnb">
             <ul class="main-menu">
@@ -68,24 +88,26 @@
         </header>
       </div>
       <!-- scroll-header-wrap -->
-      <div class="main-slide-banner-wrap clear">
-        <ul class="main-slide-banner">
-          <li>
-            <a href="#"
-              ><img src="img/main_banner_01.jpg" alt="침구류이미지"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="img/main_banner_02.jpg" alt="침구류이미지"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="img/main_banner_03.jpg" alt="침구류이미지"
-            /></a>
-          </li>
-        </ul>
+      <div id="container">
+        <div class="main-slide-banner-wrap clear">
+          <ul class="main-slide-banner">
+            <li>
+              <a href="#"
+                ><img src="img/main_banner_01.jpg" alt="침구류이미지"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="img/main_banner_02.jpg" alt="침구류이미지"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="img/main_banner_03.jpg" alt="침구류이미지"
+              /></a>
+            </li>
+          </ul>
+        </div>
       </div>
       <section class="youtube-container clear">
         <div class="youtube-txt">
@@ -116,29 +138,31 @@
             <img src="img/collection_img01.jpg" alt="베이직이미지" />
             <div class="clist-lt-txt">
               <h3><img src="img/logo_basic_w.svg" alt="베이직로고" /></h3>
-              <p>똑똑한 사람들의 합리적인 선택</p>
+              <a href="/collection 01.html"></a>
+              <p class="collection-txt">똑똑한 사람들의 합리적인 선택</p>
             </div>
           </div>
-
-          <div class="clist-right-top">
-            <img src="img/collection_img02.jpg" alt="액티브이미지" />
-            <div class="clist-rt-top-txt">
-              <h3><img src="img/logo_active_w.svg" alt="액티브로고" /></h3>
-              <p>유능한 사람들의 고급스러운 선택</p>
+          <div class="collection-right-wrap">
+            <div class="clist-right-top">
+              <img src="img/collection_img02.jpg" alt="액티브이미지" />
+              <div class="clist-rt-top-txt">
+                <h3><img src="img/logo_active_w.svg" alt="액티브로고" /></h3>
+                <p class="collection-txt">유능한 사람들의 고급스러운 선택</p>
+              </div>
             </div>
-          </div>
-          <div class="clist-right-btm">
-            <img src="img/collection_img03.jpg" alt="g2이미지" />
-            <div class="clist-rt-btm-txt">
-              <h3><img src="img/logo_g2_w.svg" alt="g2로고" /></h3>
-              <p>열정적인 사람들의 탁월한 선택</p>
+            <div class="clist-right-btm">
+              <img src="img/collection_img03.jpg" alt="g2이미지" />
+              <div class="clist-rt-btm-txt">
+                <h3><img src="img/logo_g2_w.svg" alt="g2로고" /></h3>
+                <p class="collection-txt">열정적인 사람들의 탁월한 선택</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="products-list">
-        <h2>PRODUCTS</h2>
-        <div class="products-list-wrap">
+      <section class="products-list-wrap">
+        <div class="products-list">
+          <h2>PRODUCTS</h2>
           <div class="plist-left">
             <img src="img/products_img01.jpg" alt="topper이미지" />
             <div class="plist-lt-txt">
@@ -174,29 +198,36 @@
         <div class="lab-container">
           <h2>LAB</h2>
           <div class="lab-item-group">
-            <figure>
-              <img src="img/lab_img.gif" alt="움직이는이미지" />
-            </figure>
-            <div class="lab-top-txt">
-              <h3>
-                <img src="img/logo-light.svg" alt="브랜드로고" />
-                <span class="x-icon"></span>
-                <span>수면환경연구소</span>
-              </h3>
-              <div class="lab-btm-txt">
-                <h3>SLEEP STUDIO</h3>
-                <p>작은 것 하나까지 세심하게 고민해 만든 제품.</p>
-                <p>
-                  바라는 것은 단 하나 시그니처베드와 함께 완벽한 숙면을 하는 것.
-                </p>
+            <div class="lab-img-left">
+              <!-- <img src="img/lab_img.gif" alt="움직이는이미지" /> -->
+            </div>
+            <div class="lab-img-right">
+              <!-- <img src="img/lab_bg.jpg" alt="스펀지이미지" /> -->
+              <div class="lab-top-txt">
+                <h3>
+                  <img src="img/logo-light.svg" alt="브랜드로고" />
+                  <span class="x-icon"></span>
+                  <span>수면환경연구소</span>
+                </h3>
+                <div class="lab-btm-txt">
+                  <h3>SLEEP STUDIO</h3>
+                  <p>작은 것 하나까지 세심하게 고민해 만든 제품.</p>
+                  <p>
+                    바라는 것은 단 하나 시그니처베드와 함께 완벽한 숙면을 하는
+                    것.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="instagram-list">
-        <h2>Instagram</h2>
-        <div class="instagram-wrap">
+      <section class="instagram-list-wrap">
+        <h2>
+          <img src="img/istargram_icon.png" alt="인스타그램로고" />
+          Instagram
+        </h2>
+        <div class="instagram-list">
           <!-- <i class="fa fa-instagram"></i> -->
           <div class="insta1">
             <img src="img/instagram_1.jpg" alt="인스타그램이미지" />

@@ -12,6 +12,8 @@ function deviceSizeCheck(pcSize) {
   $(window).resize();
 }
 //deviceSizeCheck(num);
+
+// fixed header
 $(window).on('scroll', function () {
   if ($(this).scrollTop() > 300) {
     $('header').addClass('fixed');
