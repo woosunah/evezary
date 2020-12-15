@@ -181,6 +181,9 @@ h2 {
   text-align: center;
   padding: 60px 0;
 }
+.products-list > div {
+  position: relative;
+}
 .products-list h2::after {
   content: '';
   display: block;
@@ -197,9 +200,7 @@ h2 {
   display: inline-block;
   margin-right: 32px;
 }
-.plist-lt-txt {
-  position: relative;
-}
+
 .plist-lt-txt > span {
   position: absolute;
   top: 0;
@@ -209,8 +210,8 @@ h2 {
 }
 span.plus {
   position: absolute;
-  top: 0px;
-  left: 135px;
+  top: 119px;
+  left: 145px;
   text-indent: -99999em;
   width: 70px;
   height: 70px;
@@ -224,7 +225,7 @@ span.plus {
   background: #fff;
   opacity: 1;
   transition-delay: 0.2s;
-  transition: opacity 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 .plus::before {
   position: absolute;
@@ -232,7 +233,6 @@ span.plus {
   top: 0px;
   bottom: 0px;
   width: 1px;
-  transform: translateX(-50%);
 }
 .plus::after {
   position: absolute;
@@ -240,6 +240,9 @@ span.plus {
   left: 0px;
   right: 0px;
   height: 1px;
+}
+
+.products-list > h3 {
 }
 
 /* lab */
