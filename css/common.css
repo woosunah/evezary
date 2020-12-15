@@ -10,7 +10,9 @@ body {
   color: #797b86;
   min-width: 360px;
 }
-
+.scroll-header-wrap {
+  position: relative;
+}
 header {
   width: 100%;
   height: 84px;
@@ -65,7 +67,11 @@ header.fixed .main-logo img:nth-child(2) {
 .gnb {
   padding: 0 15px;
   float: left;
-  margin-left: 340px;
+  width: 760px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -283px;
 }
 .gnb .main-menu {
   font-size: 16px;
@@ -126,4 +132,25 @@ header.fixed .main-logo img:nth-child(2) {
 
 .sns-icon-group a:hover {
   color: #fff;
+}
+
+footer {
+  background-color: #181b31;
+}
+.inner-footer {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.footer-info {
+  padding-top: 20px;
+}
+.footer-txt {
+  font-size: 12px;
+  line-height: 1.6;
+  font-weight: bold;
+}
+.copyright {
+  margin: 10px 0;
 }
