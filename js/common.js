@@ -22,7 +22,14 @@ $(window).on('scroll', function () {
   }
 });
 $(function () {
-  $('.main-slide-banner').bxSlider();
+  $('.main-slide-banner').bxSlider({
+    auto: true,
+    speed: 1200,
+    pause: 3500,
+    mode: 'fade',
+    autoControls: false,
+    pager: false,
+  });
 });
 
 function gnbMenuFnc2(element) {

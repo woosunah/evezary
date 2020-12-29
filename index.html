@@ -35,7 +35,9 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/jquery.js"></script>
-    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.bxslider.min.css"></script>
+    <link rel="stylesheet" href="css/jquery.bxslider.min.css" />
     <script src="js/common.js"></script>
 
     <title>시그니처베드 클론코딩</title>
@@ -57,7 +59,7 @@
           </h1>
           <nav class="gnb">
             <ul class="main-menu">
-              <li><a href="#">HOME</a></li>
+              <li><a href="#wrap">HOME</a></li>
               <li>
                 <a href="#">COLLECTION</a>
                 <ul class="submenu">
@@ -77,7 +79,6 @@
               </li>
               <li><a href="#">STORE</a></li>
               <li><a href="#">ABOUT</a></li>
-              <li><a href="#">STORY</a></li>
               <li><a href="#">NOTICE</a></li>
             </ul>
           </nav>
@@ -121,12 +122,14 @@
           </div>
           <div class="bg-youtube">
             <img src="img/youtube_img.jpg" alt="유튜브이미지" />
-            <div class="bg-youtube-playbtn">
-              <span>
-                <a href="https://youtu.be/3xfTtMlKcWs" target="_blank"
-                  ><i class="fa fa-play"></i
-                ></a>
-              </span>
+            <div class="playbtn-outline">
+              <div class="bg-youtube-playbtn">
+                <span>
+                  <a href="https://youtu.be/3xfTtMlKcWs" target="_blank"
+                    ><i class="fa fa-play"></i
+                  ></a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -135,7 +138,9 @@
         <h2>COLLECTION</h2>
         <div class="collection-list-wrap">
           <div class="clist-left">
-            <img src="img/collection_img01.jpg" alt="베이직이미지" />
+            <a href="#"
+              ><img src="img/collection_img01.jpg" alt="베이직이미지"
+            /></a>
             <div class="clist-lt-txt">
               <h3><img src="img/logo_basic_w.svg" alt="베이직로고" /></h3>
               <a href="/collection 01.html"></a>
@@ -144,14 +149,18 @@
           </div>
           <div class="collection-right-wrap">
             <div class="clist-right-top">
-              <img src="img/collection_img02.jpg" alt="액티브이미지" />
+              <a href="#"
+                ><img src="img/collection_img02.jpg" alt="액티브이미지"
+              /></a>
               <div class="clist-rt-top-txt">
                 <h3><img src="img/logo_active_w.svg" alt="액티브로고" /></h3>
                 <p class="collection-txt">유능한 사람들의 고급스러운 선택</p>
               </div>
             </div>
             <div class="clist-right-btm">
-              <img src="img/collection_img03.jpg" alt="g2이미지" />
+              <a href="#"
+                ><img src="img/collection_img03.jpg" alt="g2이미지"
+              /></a>
               <div class="clist-rt-btm-txt">
                 <h3><img src="img/logo_g2_w.svg" alt="g2로고" /></h3>
                 <p class="collection-txt">열정적인 사람들의 탁월한 선택</p>
@@ -164,14 +173,18 @@
         <div class="products-list">
           <h2>PRODUCTS</h2>
           <div class="plist-left">
-            <img src="img/products_img01.jpg" alt="topper이미지" />
+            <a href="#"
+              ><img src="img/products_img01.jpg" alt="topper이미지"
+            /></a>
             <div class="plist-lt-txt">
               <span class="plus">보기</span>
               <h3>TOPPER</h3>
             </div>
           </div>
           <div class="plist-center">
-            <img src="img/products_img02.jpg" alt="topper이미지" />
+            <a href="#"
+              ><img src="img/products_img02.jpg" alt="topper이미지"
+            /></a>
             <div class="plist-ct-txt">
               <span class="plus">보기</span>
               <h3>
@@ -181,7 +194,9 @@
             </div>
           </div>
           <div class="plist-right">
-            <img src="img/products_img03.jpg" alt="topper이미지" />
+            <a href="#"
+              ><img src="img/products_img03.jpg" alt="topper이미지"
+            /></a>
             <div class="plist-rt-txt">
               <span class="plus">보기</span>
               <h3>
@@ -210,7 +225,7 @@
                   <span class="lab-top-txt">수면환경연구소</span>
                 </h3>
                 <div class="lab-btm-txt">
-                  <h3>SLEEP STUDIO</h3>
+                  <a href="#"><h3>SLEEP STUDIO</h3></a>
                   <p>작은 것 하나까지 세심하게 고민해 만든 제품.</p>
                   <p>
                     바라는 것은 단 하나 시그니처베드와 함께 완벽한 숙면을 하는
@@ -230,22 +245,34 @@
         <div class="instagram-list">
           <!-- <i class="fa fa-instagram"></i> -->
           <div class="insta1">
-            <img src="img/instagram_1.jpg" alt="인스타그램이미지" />
+            <a href="#"
+              ><img src="img/instagram_1.jpg" alt="인스타그램이미지"
+            /></a>
           </div>
           <div class="insta2">
-            <img src="img/instagram_2.jpg" alt="인스타그램이미지" />
+            <a href="#"
+              ><img src="img/instagram_2.jpg" alt="인스타그램이미지"
+            /></a>
           </div>
           <div class="insta3">
-            <img src="img/instagram_3.jpg" alt="인스타그램이미지" />
+            <a href="#"
+              ><img src="img/instagram_3.jpg" alt="인스타그램이미지"
+            /></a>
           </div>
           <div class="insta4">
-            <img src="img/instagram_4.jpg" alt="인스타그램이미지" />
+            <a href="#"
+              ><img src="img/instagram_4.jpg" alt="인스타그램이미지"
+            /></a>
           </div>
           <div class="insta5">
-            <img src="img/instagram_5.jpg" alt="인스타그램이미지" />
+            <a href="#"
+              ><img src="img/instagram_5.jpg" alt="인스타그램이미지"
+            /></a>
           </div>
           <div class="insta6">
-            <img src="img/instagram_6.jpg" alt="인스타그램이미지" />
+            <a href="#"
+              ><img src="img/instagram_6.jpg" alt="인스타그램이미지"
+            /></a>
           </div>
         </div>
       </section>
