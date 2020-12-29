@@ -21,6 +21,23 @@ $(window).on('scroll', function () {
     $('header').removeClass('fixed');
   }
 });
+// gnb menu bar hover, li tag color change
+$(window).on('scroll', function () {
+  if ($(this).scrollTop() > 300) {
+    $('.gnb').addClass('mouseover');
+  } else {
+    $('.gnb').removeClass('mouseover');
+  }
+});
+// i tag hover, color change
+$(window).on('scroll', function () {
+  if ($(this).scrollTop() > 300) {
+    $('.sns-icon-group').addClass('mouseover');
+  } else {
+    $('.sns-icon-group').removeClass('mouseover');
+  }
+});
+
 $(function () {
   $('.main-slide-banner').bxSlider({
     auto: true,
@@ -28,41 +45,41 @@ $(function () {
     pause: 3500,
     mode: 'fade',
     autoControls: false,
-    pager: false,
+    pager: true,
   });
 });
 
-function gnbMenuFnc2(element) {
-  var menuList1 = element.children;
-  var hoverMenu = null;
+// function gnbMenuFnc2(element) {
+//   var menuList1 = element.children;
+//   var hoverMenu = null;
 
-  for (var i = 0; i < menuList1.length; i++) {
-    menuList1[i].children[0].addEventListener('mouseover', gnbMenuHandler1);
-    menuList1[i].children[0].addEventListener('click', gnbMenuHandler2);
-  }
+//   for (var i = 0; i < menuList1.length; i++) {
+//     menuList1[i].children[0].addEventListener('mouseover', gnbMenuHandler1);
+//     menuList1[i].children[0].addEventListener('click', gnbMenuHandler2);
+//   }
 
-  function gnbMenuHandler1() {
-    if (document.querySelector('html').className == 'pc') {
-      if (hoverMenu != null) hoverMenu.classList.remove('on');
-      this.classList.add('on');
-      hoverMenu = this;
-    }
-  }
-  function gnbMenuHandler2() {
-    if (document.querySelector('html').className == 'mobile') {
-      this.classList.toggle('on');
-      if (this.className.indexOf('on') >= 0) {
-        hoverMenu = this;
-      } else {
-        hoverMenu = null;
-      }
-    }
-  }
-  element.addEventListener('mouseleave', function () {
-    if (hoverMenu != null) hoverMenu.classList.remove('on');
-    hoverMenu = null;
-  });
-}
-window.addEventListener('load', function () {
-  gnbMenuFnc2(document.querySelector('#gnb'));
-});
+//   function gnbMenuHandler1() {
+//     if (document.querySelector('html').className == 'pc') {
+//       if (hoverMenu != null) hoverMenu.classList.remove('on');
+//       this.classList.add('on');
+//       hoverMenu = this;
+//     }
+//   }
+//   function gnbMenuHandler2() {
+//     if (document.querySelector('html').className == 'mobile') {
+//       this.classList.toggle('on');
+//       if (this.className.indexOf('on') >= 0) {
+//         hoverMenu = this;
+//       } else {
+//         hoverMenu = null;
+//       }
+//     }
+//   }
+//   element.addEventListener('mouseleave', function () {
+//     if (hoverMenu != null) hoverMenu.classList.remove('on');
+//     hoverMenu = null;
+//   });
+// }
+// window.addEventListener('load', function () {
+//   gnbMenuFnc2(document.querySelector('#gnb'));
+// });

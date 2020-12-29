@@ -121,6 +121,11 @@ header.fixed .main-logo img:nth-child(2) {
   display: block;
 }
 
+/* gnb scrollTop hover , color change */
+.gnb.mouseover .main-menu > li:hover {
+  color: #000;
+}
+
 .sns-icon-group {
   float: right;
   margin: 32px 12px 0 0;
@@ -132,6 +137,10 @@ header.fixed .main-logo img:nth-child(2) {
 
 .sns-icon-group a:hover {
   color: #fff;
+}
+/* scroll drop i tag color change */
+.sns-icon-group.mouseover a:hover {
+  color: #000;
 }
 
 footer {

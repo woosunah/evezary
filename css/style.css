@@ -29,6 +29,7 @@ h2 {
   width: 1200px;
   margin: 0 auto;
 }
+
 .fancy-title {
   float: left;
   margin-top: 80px;
@@ -45,7 +46,7 @@ h2 {
 }
 .bg-youtube {
   float: right;
-  margin-right: -22vw !important;
+  margin-right: -1vw !important;
   position: relative;
 }
 
@@ -60,39 +61,30 @@ h2 {
   right: 50%;
   transform: translateY(-50%);
 }
+
 .playbtn-outline {
   width: 6.5em;
   height: 6.5em;
   border-radius: 50%;
   border: 1px solid #fff;
   position: absolute;
-  top: 50%;
+  top: 42%;
   right: 50%;
   transform: translateY(-50%);
-  animation: scale1 2s infinite alternate;
+  opacity: 0;
+  animation: wave 1.5s infinite linear;
+  animation-timing-function: ease;
 }
 
-@keyframes scale1 {
+@keyframes wave {
   0% {
-    transform: scale(0);
+    transform: scale(1);
+    opacity: 1;
   }
   100% {
-    transform: scale(1);
+    transform: scale(1.4);
+    opacity: 0;
   }
-  
-}
-@keyframes scale2 {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-.playbtn-outline {
-  animation-name: scale1;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
 }
 
 .bg-youtube-playbtn i {
@@ -349,6 +341,36 @@ span.plus {
 .lab-top-title .lab-top-txt {
   font-size: 18px;
 }
+.lab-top-title .x-icon {
+  position: relative;
+  top: 10px;
+  right: -10px;
+  /* background-color: #fff; */
+  /* width: 40px; */
+  /* height: 2px; */
+}
+.lab-top-title .x-icon::before,
+.lab-top-title .x-icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 1px;
+  background-color: #fff;
+}
+.lab-top-title .x-icon::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.lab-top-title .x-icon::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.lab-top-txt {
+  border: 1px solid yellow;
+  margin-left: 35px;
+  /* 여기부터 하기 */
+}
+
 .lab-btm-txt > a > h3 {
   font-size: 48px;
   padding: 40px 0 20px 0;
