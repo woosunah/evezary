@@ -50,7 +50,7 @@ h2 {
   position: relative;
 }
 
-.bg-youtube-playbtn {
+.bg-youtube-playbtn a {
   background-color: #ff0000;
   width: 6.5em;
   height: 6.5em;
@@ -60,6 +60,7 @@ h2 {
   top: 50%;
   right: 50%;
   transform: translateY(-50%);
+  z-index: 99999999999999999999;
 }
 
 .playbtn-outline {
@@ -303,7 +304,7 @@ span.plus {
   display: block;
   position: absolute;
   top: 5px;
-  right: 555px;
+  right: 552px;
   width: 10px;
   height: 10px;
   background-color: #f39800;
@@ -317,7 +318,7 @@ span.plus {
   height: 100%;
   background: url(../img/lab_img.gif) no-repeat;
   background-size: cover;
-  background-position: left top;
+  background-position: right bottom;
 }
 .lab-img-right {
   float: right;
@@ -331,31 +332,35 @@ span.plus {
 .lab-top-title {
   position: absolute;
   top: 45%;
-  left: 35%;
+  left: 32%;
   transform: translate(-50%, -50%);
 }
 .lab-top-title > h3 {
   border-bottom: 1px solid #ffffff87;
   padding-bottom: 10px;
+  width: 390px;
+}
+.lab-top-title > h3 > img {
+  width: 200px;
 }
 .lab-top-title .lab-top-txt {
-  font-size: 18px;
+  font-size: 23px;
+  position: absolute;
+  top: 1%;
+  left: 57%;
 }
 .lab-top-title .x-icon {
   position: relative;
-  top: 10px;
-  right: -10px;
-  /* background-color: #fff; */
-  /* width: 40px; */
-  /* height: 2px; */
+  top: 5px;
+  right: -22px;
 }
 .lab-top-title .x-icon::before,
 .lab-top-title .x-icon::after {
   content: '';
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
-  width: 40px;
+  width: 30px;
   height: 1px;
   background-color: #fff;
 }
@@ -365,11 +370,6 @@ span.plus {
 .lab-top-title .x-icon::after {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
-.lab-top-txt {
-  border: 1px solid yellow;
-  margin-left: 35px;
-  /* 여기부터 하기 */
-}
 
 .lab-btm-txt > a > h3 {
   font-size: 48px;
@@ -377,6 +377,7 @@ span.plus {
 }
 .lab-btm-txt > p {
   font-size: 16px;
+  line-height: 2em;
 }
 .lab-btm-txt p:first-child {
   margin: 10px 0;
@@ -386,17 +387,47 @@ span.plus {
 .instagram-list-wrap {
   width: 1200px;
   margin: 0 auto;
-  border: 1px solid #000;
+  padding-bottom: 120px;
 }
-.instagram-list-wrap > h2 {
-  /* width: 1200px; */
+.instagram-container > h2 {
   margin: 0 auto;
   text-align: center;
   padding: 60px 0;
-  background-image: url(../img/istargram_icon.png) no-repeat center center;
 }
-.instagram-list-wrap > span > img {
-  width: 33px;
-  height: 33px;
+.instagram-container h2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 63px;
+  right: 488px;
+  width: 10px;
+  height: 10px;
+  background-color: #f39800;
   border: 1px solid red;
+}
+.instagram-list div {
+  width: 360px;
+  display: inline-block;
+  margin: 15px;
+  position: relative;
+}
+.instagram-list div > a > img:hover {
+  /* background-color: hsla(31, 21%, 5%, 0.75); */
+  filter: brightness(50%);
+}
+.instagram-list div i {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+}
+.instagram-list img:hover i {
+  visibility: visible;
+  opacity: 1;
+}
+.instagram-list .insta1,
+.instagram-list .insta4 {
+  margin-left: 24px;
 }

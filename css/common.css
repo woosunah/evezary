@@ -34,6 +34,7 @@ header.fixed {
   position: fixed;
   left: 0;
   width: 100%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 header.fixed .gnb .main-menu li {
   color: rgba(0, 0, 0, 0.7);
