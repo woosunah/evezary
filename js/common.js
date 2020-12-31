@@ -48,3 +48,22 @@ $(function () {
     pager: true,
   });
 });
+
+$(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 250) {
+      $('#top-btn').fadeIn();
+    } else {
+      $('#top-btn').fadeOut();
+    }
+  });
+  $('#top-btn').click(function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // // ios scrollTop  smooth move
+  // $('#top-btn').click(function () {
+  //   $('html, body').animate({ scrollTop: 0 }, 400);
+  //   return false;
+  // });
+});
