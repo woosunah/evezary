@@ -3,9 +3,27 @@
 @import url('reset.css');
 @import url('common.css');
 
+/* evezary sub page */
 html {
+  max-width: 100%;
+  scroll-behavior: smooth;
+}
+html,
+body {
   padding: 0;
-  /* 왜 헤더위에 패딩이있지? */
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+body {
+  background-color: #cedfe8;
+  z-index: -1;
+}
+#wrap {
+  min-height: 100%;
+  height: 100%;
+  height: auto;
+  position: relative;
 }
 header {
   width: 100%;
@@ -17,7 +35,6 @@ header {
   z-index: 2;
   background-color: #fff;
 }
-
 header.fixed {
   background-color: #fff;
   position: fixed;
@@ -26,13 +43,13 @@ header.fixed {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
   z-index: 999;
 }
+header.fixed .main-logo a img {
+  display: block;
+  z-index: 2;
+}
 header.fixed .gnb .main-menu li {
   color: rgba(0, 0, 0, 0.7);
 }
-/* header.fixed .main-logo img:nth-child(2) {
-  display: block;
-} */
-
 .gnb {
   padding: 0 15px;
   float: left;
@@ -45,7 +62,6 @@ header.fixed .gnb .main-menu li {
 .gnb .main-menu {
   font-size: 16px;
 }
-
 .gnb .main-menu > li {
   float: left;
   padding: 20px 15px;
@@ -55,7 +71,6 @@ header.fixed .gnb .main-menu li {
   position: relative;
   font-weight: bold;
 }
-
 .gnb .main-menu > li:hover {
   color: #000;
 }
@@ -67,7 +82,7 @@ header.fixed .gnb .main-menu li {
   background: #fff;
   border-top: 1px solid #fff;
   border-radius: 5px;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 .gnb .submenu li {
   padding: 15px 30px;
@@ -89,12 +104,10 @@ header.fixed .gnb .main-menu li {
 .gnb .main-menu > li:hover .submenu {
   display: block;
 }
-
 /* gnb scrollTop hover , color change */
 .gnb.mouseover .main-menu > li:hover {
   color: #000;
 }
-
 .sns-icon-group {
   float: right;
   margin: 32px 12px 0 0;
@@ -103,7 +116,6 @@ header.fixed .gnb .main-menu li {
 .sns-icon-group i:first-child {
   margin-right: 12px;
 }
-
 .sns-icon-group a:hover {
   color: #000;
 }
@@ -112,24 +124,154 @@ header.fixed .gnb .main-menu li {
   color: #000;
 }
 
-section {
-  background-color: #cedfe8;
-}
-#wrap,
-#content {
+/* section */
+
+#container {
+  width: 1200px;
+  margin: 0 auto;
   position: relative;
-  /* background-color: #cedfe8; */
 }
-/* .sub-collection-basic-bg {
-  height: 100%;
-  background-color: #cedfe8;
-} */
-/*sub-collection basic_bg */
+.sub-fancy-title {
+  padding: 150px;
+  /* text-align: center; */
+}
+.sub-fancy-title img {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 57px;
+  margin-top: 60px;
+}
+.sub-text-box {
+  position: relative;
+}
+.sub-text {
+  position: absolute;
+  top: calc(50% + 60px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sub-text > * {
+  display: block;
+  text-align: center;
+}
+.sub-text strong {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.sub-text .en {
+  font-family: 'Jost', sans-serif;
+  font-weight: bold;
+  color: #fff;
+}
+.sub-text span.en {
+  font-weight: normal;
+  margin-top: 30px;
+}
+.sub-text .ko {
+  color: #6ed2ff;
+  line-height: 1.2;
+  font-size: 16px;
+  font-weight: 80;
+}
+
+.sub-bg-img img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -40px;
+}
+.sub-bg-img .mobile {
+  display: none;
+}
+.sub-img-item-box {
+  position: relative;
+}
+.sub-img-item-left {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  margin-top: 30%;
+}
+.sub-img-item-lt img {
+  padding-bottom: 12px;
+}
+.sub-img-item-lc {
+  width: 370px;
+  height: 460px;
+  background-color: #01354e;
+  position: relative;
+  color: #fff;
+  padding: 48px 0 0 40px;
+}
+.sub-img-item-lc::after {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: -20px;
+  width: 370px;
+  height: 460px;
+  border: 6px solid #fff;
+  z-index: -1;
+}
+
+.sub-img-item-lc-en-txt p {
+  font-size: 30px;
+  font-weight: 100;
+  font-family: 'Cerebri Sans', sans-serif;
+}
+.sub-img-item-lc-en-txt span {
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Jost', sans-serif;
+}
+.sub-img-item-lc-ko-txt {
+  margin-top: 30px;
+  font-size: 18px;
+  font-family: 'Cerebri Sans', sans-serif;
+}
+.sub-img-brush {
+  position: absolute;
+  width: 282px;
+  top: 31px;
+  left: 263px;
+  z-index: 1;
+}
+.sub-img-item-lb {
+  margin-top: 80px;
+}
+
+.sub-img-item-right {
+  position: absolute;
+  top: 20%;
+  right: 1%;
+  margin-top: 35%;
+  padding-bottom: 100px;
+}
+.sub-img-item-right div img {
+  padding-bottom: 12px;
+}
+
+/* section sub content btm */
+.sub-content-btm {
+  /* position: relative; */
+}
+.sub-mt-img-box {
+  position: relative;
+}
+.sub-mt-img-left-box div {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+}
 
 /* footer */
-
 footer {
   background-color: #181b31;
+  position: absolute;
+  width: 100%;
+  bottom: -100%;
 }
 .inner-footer {
   width: 1200px;
@@ -149,6 +291,7 @@ footer {
   margin: 10px 0;
 }
 
+/* top btn */
 #top-btn {
   position: fixed;
   bottom: 10px;
