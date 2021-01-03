@@ -16,11 +16,10 @@ body {
   box-sizing: border-box;
 }
 body {
-  background-color: #cedfe8;
+  /* background-color: #cedfe8; */
   z-index: -1;
 }
 #wrap {
-  min-height: 100%;
   height: 100%;
   height: auto;
   position: relative;
@@ -34,7 +33,9 @@ header {
   left: 0;
   z-index: 2;
   background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
 }
+
 header.fixed {
   background-color: #fff;
   position: fixed;
@@ -43,10 +44,17 @@ header.fixed {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
   z-index: 999;
 }
-header.fixed .main-logo a img {
-  display: block;
-  z-index: 2;
+header .main-logo a img:first-child {
+  display: none;
 }
+header .main-logo a img:nth-child(2) {
+  display: block;
+  z-index: 99;
+}
+header.fixed .main-logo a img:first-child {
+  display: none;
+}
+
 header.fixed .gnb .main-menu li {
   color: rgba(0, 0, 0, 0.7);
 }
@@ -124,16 +132,32 @@ header.fixed .gnb .main-menu li {
   color: #000;
 }
 
-/* section */
+/* h2로고부터, header영역 침범했고
+나머지 이미지 item들 position:absolute줘도 위치지정 안되고
+%를 수치 입력하니 적용됨 footer도 왜 하단에 고정안되는지 모르겠음*/
 
-#container {
+/* collection_01.html */
+section.sub-content-top,
+section.sub-content-btm {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
   width: 1200px;
   margin: 0 auto;
   position: relative;
 }
+
+#container {
+  height: 100%;
+  background-color: #cedfe8 !important;
+}
+.sub-collection-basic-bg {
+  height: 100%;
+}
+
 .sub-fancy-title {
   padding: 150px;
-  /* text-align: center; */
 }
 .sub-fancy-title img {
   position: absolute;
@@ -255,23 +279,87 @@ header.fixed .gnb .main-menu li {
 
 /* section sub content btm */
 .sub-content-btm {
-  /* position: relative; */
+  min-height: 100%;
+  position: relative;
+  border: 1px solid black;
 }
 .sub-mt-img-box {
   position: relative;
 }
-.sub-mt-img-left-box div {
-  position: absolute;
-  bottom: 10%;
-  left: 0;
+.sub-mt-img-left-box {
+  position: relative;
+  border: 1px solid red;
 }
+.sub-mt-img-left {
+  /* position: relative; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 1;
+  /* transition: all 0.7s ease; */
+  top: 470%;
+  left: 20%;
+  /* 질문 bottom:0이 먹지않음 */
+  /* display: block; */
+}
+.sub-mt-img-left-on {
+  position: absolute;
+  top: 500%;
+  left: 10%;
+}
+
+/* product_01.html */
+#container.product-content {
+  width: 100%;
+  height: 100%;
+  background: #f7f8fb !important;
+  border: 1px solid red;
+}
+.product-title h2 {
+  font-size: 46px;
+  border: 1px solid red;
+}
+.product-img-box {
+  width: 1200px;
+  margin: 80px auto 0;
+  border: 1px solid red;
+  position: relative;
+}
+.pt-img-left-box,
+.pt-img-right-box {
+  display: inline-block;
+  position: relative;
+}
+.pt-img-left-box {
+  /* position: absolute;
+  bottom: 30%;
+  left: 20%; */
+  float: left;
+}
+.pt-img-left-on,
+.pt-img-right-on {
+  display: none;
+}
+.pt-img-left img:hover .pt-img-left-on img {
+  display: block;
+  opacity: 1;
+}
+.pt-img-right-box {
+  /* position: absolute;
+  bottom: 30%;
+  right: 17%; */
+}
+/* 왜 한쪽 이미지만 position:absolute먹고, 나머지 
+다른쪽도 적용하면 왜 이미지가 푸터 밑으로 오는지? */
+/* header가 문제임.. header scrollTop때문에 안됨 */
 
 /* footer */
 footer {
   background-color: #181b31;
   position: absolute;
   width: 100%;
-  bottom: -100%;
+  /* bottom: 150%; */
 }
 .inner-footer {
   width: 1200px;
