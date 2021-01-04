@@ -354,6 +354,133 @@ section.sub-content-btm {
 다른쪽도 적용하면 왜 이미지가 푸터 밑으로 오는지? */
 /* header가 문제임.. header scrollTop때문에 안됨 */
 
+/* signature_mongata.html */
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(126, 85, 240);
+}
+.mongata-title {
+  width: 1200px;
+  height: 157px;
+  margin: 0 auto;
+  font-family: 'Jost', 'Noto Sans KR', sans-serif;
+  /* border: 1px solid red; */
+  line-height: 157px;
+}
+.mongata-title .title-bed {
+  font-size: 48px;
+  color: #222;
+  display: inline-block;
+  text-align: right;
+}
+.mongata-title .title-bed-1 {
+  font-size: 24px;
+  font-weight: 100;
+  margin-left: 10px;
+}
+.mongata-title .bed-price {
+  margin-left: 170px;
+  font-size: 32px;
+}
+.bed-price-box {
+  position: relative;
+}
+.bed-price-box .bed-price-txt {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-family: 'Jost', 'Noto Sans KR', sans-serif;
+}
+.bed-price-img img:nth-child(2) {
+  display: none;
+}
+.inner-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.homer-txt-box {
+  padding: 85px 15px;
+  text-align: center;
+  font-family: 'Jost', 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  color: #302927;
+}
+.mongata-youtube-container {
+  position: relative;
+}
+.mongata-youtube {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.mongata-youtube img {
+  transition: transform 0.85s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.mongata-youtube > a > img:hover {
+  transform: scale(1.1);
+  transition: transform 0.85s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+/* .mongata-youtube {
+  background-image: url(../img/sub/bed_mongata_youtube.jpg) no-repeat;
+} */
+.mongata-youtube-icon i {
+  z-index: 2;
+  color: red;
+  font-size: 86px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mongata-youtube::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.mongata-youtube-txt {
+  font-size: 20px;
+  margin: 20px 0 80px;
+  color: #181b31;
+  font-weight: 500;
+}
+.bed-style-container .bed-style-01 {
+  padding-bottom: 100px;
+}
+.bed-style-container-inner {
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.bed-style-inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+.bed-style-04 {
+  padding-bottom: 100px;
+}
+.bed-style-new {
+  width: 100%;
+  background-color: #fff;
+}
+.bed-style-05 {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.bed-style-06 {
+  padding-top: 100px;
+}
 /* footer */
 footer {
   background-color: #181b31;
