@@ -1,7 +1,7 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 @import url('reset.css');
 @import url('common.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
 /* evezary sub page */
 html {
@@ -14,6 +14,7 @@ body {
   margin: 0;
   height: 100%;
   box-sizing: border-box;
+  font: 14px/1.3 'Noto Sans KR', Helvetica, Arial, sans-serif;
 }
 body {
   /* background-color: #cedfe8; */
@@ -360,6 +361,11 @@ section.sub-content-btm {
   height: 100px;
   background-color: rgb(126, 85, 240);
 }
+.header p {
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+}
 .mongata-title {
   width: 1200px;
   height: 157px;
@@ -466,6 +472,9 @@ section.sub-content-btm {
   width: 1200px;
   margin: 0 auto;
 }
+.bed-style-02 {
+  padding-top: 100px;
+}
 .bed-style-04 {
   padding-bottom: 100px;
 }
@@ -479,8 +488,100 @@ section.sub-content-btm {
   padding: 100px 0;
 }
 .bed-style-06 {
-  padding-top: 100px;
+  padding: 100px 0;
 }
+.bed-style-07 {
+  padding: 100px 0;
+  width: 1200px;
+  margin: 0 auto;
+}
+.bed-style-last-box {
+  position: relative;
+  color: #fff;
+}
+.bed-style-08 img:nth-child(2) {
+  display: none;
+}
+.bed-style-txt-box {
+  /* font: 14px/1.3 'Noto Sans KR', Helvetica, Arial, sans-serif; */
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 1.2;
+}
+.bed-style-txt-box h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.bed-style-txt-box p {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 15px;
+  line-height: 1.8;
+}
+.accordion-area {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  padding-bottom: 100px;
+}
+.accordion-area h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #060221;
+  font-weight: 700;
+  padding: 100px 0;
+  position: relative;
+}
+.accordion-area h1::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 101px;
+  right: 484px;
+  width: 10px;
+  height: 10px;
+  background-color: #f39800;
+}
+.accordion-container {
+  padding: 0 150px;
+  border: 1px solid red;
+}
+.accordion-item {
+  border-bottom: 1px solid #e0e1eb;
+  border-top: 1px solid #e0e1eb;
+}
+.accordion-item .accordion-item-heading {
+  width: 606px;
+  cursor: pointer;
+}
+.accordion-item .accordion-item-heading h4 {
+  font-size: 19px;
+  color: #060221;
+  /* border: 1px solid green; */
+  width: 570px;
+  display: inline-block;
+}
+.accordion-title a {
+  padding: 10px 300px 10px 20px;
+}
+.accordion-item .accordion-toggle-btn i {
+  font-size: 17px;
+  color: #181b31;
+  /* border: 1px solid blue; */
+  display: inline-block;
+  text-align: center;
+}
+.accordion-item {
+  margin-left: 195px;
+}
+.accordion-content {
+  color: #828282;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
 /* footer */
 footer {
   background-color: #181b31;

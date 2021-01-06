@@ -46,7 +46,9 @@
         <a href="#container">본문바로가기</a>
       </div>
       <!-- header instead div tag(임시)-->
-      <div class="header"></div>
+      <div class="header">
+        <p>header</p> 
+      </div>
       <div class="mongata-title">
         <!-- div id="container" ? -->
         <h1 class="title-bed">
@@ -121,17 +123,19 @@
                   <div class="bed-style-06">
                 <img src="img/sub/img_bed_mongata_04.jpg" alt="몽가타베드이미지">
                 </div>
-                <div class="bed-style-07">
-                <img src="img/sub/img_bed_mongata_05.jpg" alt="몽가타베드이미지">
-                </div>
               </div>
+              </div><!-- bed-style-container-inner -->
+              <div class="bed-style-new">
+                <div class="bed-style-07">
+                  <img src="img/sub/img_bed_mongata_05.jpg" alt="몽가타베드이미지">
+                  </div>
               </div>
         <section class="bed-style-last-box">
-          <div>
-            <img src="img/sub/bed_mongata_footer.jpg" alt="">
-            <img src="img/sub/bed_active_footer_m.jpg" alt="">
+          <div class="bed-style-08">
+            <img src="img/sub/bed_mongata_footer.jpg" alt="몽가타베드이미지">
+            <img src="img/sub/bed_active_footer_m.jpg" alt="몽가타베드이미지">
           </div>
-          <div>
+          <div class="bed-style-txt-box">
             <h3>숙면을 지킬 수 있는 모든 가치를 담아</h3>
             <p>편안함, 안정성, 스타일로 고유의 품격을 완성합니다</br>
               고객을 배려하는 퀄리티로 최상의 숙면을 선사합니다
@@ -142,87 +146,89 @@
           <div class="purchase-info">
             <h1>구매추가정보</h1>
           </div>
-          <div class="accordian-container">
-            <div class="accodian-item">
-              <div class="accodian-item-heading">
-                <h4 class="accodian-title">
-                  <a href="#">추천 고객</a>
-                  <span class="accordion-toggle-btn">
-                    <i class="icon-arrows_down"></i>
-                    <i class="icon-arrows_up"></i>
-                  </span>
+          <div class="accordion-container">
+            <div class="accordion-item">
+              <div class="accordion-item-heading">
+                <h4 class="accordion-title">
+                  <a href="#">추천 고객 </a>
+                    <span class="accordion-toggle-btn">
+                      <i class="fas fa-chevron-down"></i>
+                      <i class="fas fa-chevron-up"></i>
+                    </span>
                 </h4>
               </div>
-              <div class="accodian-content">
-                <p>잠자리 뒤척임이 심한 분</br>
-                  허리와 척추가 약한 분</br>
-                  침대에서 여러가지 업무를 해야하는 분
-              </p>
+              <div id="accordion-collapse-panel" class="accordion-collapse">
+                <div class="accordion-content">
+                  <p>잠자리 뒤척임이 심한 분</br>
+                    허리와 척추가 약한 분</br>
+                    침대에서 여러가지 업무를 해야하는 분
+                </p>
+                </div>
               </div>
-            </div><!-- accodian-item -->
-            <div class="accodian-item">
-              <div class="accodian-item-heading">
-                <h4 class="accodian-title">
+            </div><!-- accordion-item -->
+            <div class="accordion-item">
+              <div class="accordion-item-heading">
+                <h4 class="accordion-title">
                   <a href="#">기술</a>
                   <span class="accordion-toggle-btn">
-                    <i class="icon-arrows_down"></i>
-                    <i class="icon-arrows_up"></i>
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-chevron-up"></i>
                   </span>
                 </h4>
               </div>
-              <div class="accodian-content">
+              <div class="accordion-content">
                 <p>무소음 약 20dB</br>
                   요람을 닮은 X-모션 기능</br>
                   저주파수 수면진동</br>
                   달빛을 담은 라이팅
               </p>
               </div>
-            </div><!-- accodian-item -->
-            <div class="accodian-item">
-              <div class="accodian-item-heading">
-                <h4 class="accodian-title">
+            </div><!-- accordion-item -->
+            <div class="accordion-item">
+              <div class="accordion-item-heading">
+                <h4 class="accordion-title">
                   <a href="#">인증</a>
                   <span class="accordion-toggle-btn">
-                    <i class="icon-arrows_down"></i>
-                    <i class="icon-arrows_up"></i>
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-chevron-up"></i>
                   </span>
                 </h4>
               </div>
-              <div class="accodian-content">
+              <div class="accordion-content">
                 <p>라돈 안정 인증</br>
                   전기용품 안전 인증</br>
                   전자파 적합성 인증
               </p>
               </div>
-            </div><!-- accodian-item -->
-            <div class="accodian-item">
-              <div class="accodian-item-heading">
-                <h4 class="accodian-title">
+            </div><!-- accordion-item -->
+            <div class="accordion-item">
+              <div class="accordion-item-heading">
+                <h4 class="accordion-title">
                   <a href="#">A/S 정책</a>
                   <span class="accordion-toggle-btn">
-                    <i class="icon-arrows_down"></i>
-                    <i class="icon-arrows_up"></i>
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-chevron-up"></i>
                   </span>
                 </h4>
               </div>
-              <div class="accodian-content">
+              <div class="accordion-content">
                 <p>몽가타 본사 제품과 동일한 서비스 적용</br>
                   프레임: 60개월 / 모터 및 부품:1년 (설치일 기준, 경우에 따라 유상/무상으로 서비스)</br>
                   *자세한 정책은 몽가타 고객센터 (1522-6248)를 통해 확인 가능합니다.
               </p>
               </div>
-            </div><!-- accodian-item -->
-            <div class="accodian-item">
-              <div class="accodian-item-heading">
-                <h4 class="accodian-title">
+            </div><!-- accordion-item -->
+            <div class="accordion-item">
+              <div class="accordion-item-heading">
+                <h4 class="accordion-title">
                   <a href="#">크기</a>
                   <span class="accordion-toggle-btn">
-                    <i class="icon-arrows_down"></i>
-                    <i class="icon-arrows_up"></i>
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-chevron-up"></i>
                   </span>
                 </h4>
               </div>
-              <div class="accodian-content">
+              <div class="accordion-content">
                 <strong>바운서</strong>
                   <p>SS:1520*2100*1000 (그레이)</br>
                     Q:1820*2100*1000 (네이비)</p>
@@ -230,42 +236,42 @@
                 <p>SS:1520*2100*1000 (그레이)</br>
                   Q:1820*2100*1000 (네이비)</p>
               </div>
-            </div><!-- accodian-item -->
-            <div class="accodian-item">
-              <div class="accodian-item-heading">
-                <h4 class="accodian-title">
+            </div><!-- accordion-item -->
+            <div class="accordion-item">
+              <div class="accordion-item-heading">
+                <h4 class="accordion-title">
                   <a href="#">추천 제품</a>
                   <span class="accordion-toggle-btn">
-                    <i class="icon-arrows_down"></i>
-                    <i class="icon-arrows_up"></i>
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-chevron-up"></i>
                   </span>
                 </h4>
               </div>
-              <div class="accodian-content">
+              <div class="accordion-content">
                 <p>몽가타 수면센서</br>
                   시그니처 액티브</br>
                   시그니처 G2</br>
                   시그니처 베이직
               </p>
               </div>
-            </div><!-- accodian-item -->
-            <div class="accodian-item">
-              <div class="accodian-item-heading">
-                <h4 class="accodian-title">
+            </div><!-- accordion-item -->
+            <div class="accordion-item">
+              <div class="accordion-item-heading">
+                <h4 class="accordion-title">
                   <a href="#">주의 사항</a>
                   <span class="accordion-toggle-btn">
-                    <i class="icon-arrows_down"></i>
-                    <i class="icon-arrows_up"></i>
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-chevron-up"></i>
                   </span>
                 </h4>
               </div>
-              <div class="accodian-content">
+              <div class="accordion-content">
                 <p>유아나 애완동물이 프레임 후면에 들어가지 않도록 주의</br>
                   어린이의 경우 단독으로 모션베드를 작동하지 않도록 주의</br>
               </p>
               </div>
-            </div><!-- accodian-item -->
-          </div><!-- accordian-container -->
+            </div><!-- accordion-item -->
+          </div><!-- accordion-container -->
         </section>
       </div>
       <footer>
