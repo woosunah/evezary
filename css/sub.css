@@ -144,11 +144,17 @@ section.sub-content-btm {
   width: 1200px;
   margin: 0 auto;
   position: relative;
+  background-color: #cedfe8;
+}
+.sub-content-btm {
+  clear: both;
 }
 
 #basic-container {
   /* height: 100%;
   width: 100%; */
+  width: 100%;
+  height: 100%;
   background-color: #cedfe8;
 }
 
@@ -272,9 +278,16 @@ section.sub-content-btm {
 
 /* section sub content btm */
 .sub-content-btm {
-  min-height: 100%;
+  width: 1200px;
+  height: 700px;
   position: relative;
   border: 1px solid black;
+}
+.sub-content-btm p {
+  background-color: rosybrown;
+  padding: 50px;
+  color: #fff;
+  font-size: 50px;
 }
 .sub-mt-img-box {
   position: relative;
@@ -302,53 +315,260 @@ section.sub-content-btm {
   left: 10%;
 }
 
-/* product_01.html */
-#container.product-content {
+/* collection_02.html */
+#g2-container {
   width: 100%;
   height: 100%;
-  background: #f7f8fb !important;
-  border: 1px solid red;
 }
-.product-title h2 {
-  font-size: 46px;
-  border: 1px solid red;
+#g2-container .g2-bg {
+  background-color: #cfe1cb;
 }
-.product-img-box {
+#g2-container .g2-top {
   width: 1200px;
-  margin: 80px auto 0;
-  border: 1px solid red;
+  margin: 0 auto;
+  text-align: center;
+}
+#g2-container .g2-main-logo {
+  text-align: center;
+  padding: 80px 0;
+}
+#g2-container .g2-main-logo img {
+  width: 352px;
+}
+#g2-container .g2-title-box {
   position: relative;
 }
-.pt-img-left-box,
-.pt-img-right-box {
-  display: inline-block;
-  position: relative;
+#g2-container .g2-title-txt-box {
+  position: absolute;
+  top: 100px;
+  left: 380px;
 }
-.pt-img-left-box {
-  /* position: absolute;
-  bottom: 30%;
-  left: 20%; */
-  float: left;
-}
-.pt-img-left-on,
-.pt-img-right-on {
+#g2-container .g2-title-img-box img:nth-child(2) {
   display: none;
 }
-.pt-img-left img:hover .pt-img-left-on img {
-  display: block;
+.g2-title-txt-box .g2-txt-en,
+.g2-txt-en-01 {
+  color: #fff;
+  font-family: 'jost', 'Noto Sans KR', Helvetica, Arial, sans-serif;
+}
+.g2-title-txt-box .g2-txt-en {
+  font-size: 26px;
+  font-weight: 900;
+}
+.g2-title-txt-box .g2-txt-en-01 {
+  font-size: 16px;
+  line-height: 1.4;
+}
+.g2-title-txt-box .g2-txt-ko {
+  color: #c8f4c1;
+  line-height: 1.2;
+  font-size: 16px;
+}
+.g2-content-wrap {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.g2-content-img-box {
+}
+.g2-content-img-box .g2-left-img-box {
+  float: left;
+}
+.g2-content-img-box .g2-lt-img-top {
+  padding-bottom: 12px;
+}
+.g2-content-img-box .g2-lt-img-top img {
+}
+.g2-lt-img-center {
+  position: relative;
+}
+.g2-content-img-box .g2-lt-txt-center {
+  width: 370px;
+  height: 460px;
+  background-color: #2d4944;
+  margin-bottom: 60px;
+  padding: 48px 40px;
+  color: #fff;
+  font-family: 'jost', 'Noto Sans KR', Helvetica, Arial, sans-serif;
+  position: relative;
+}
+.g2-content-img-box .g2-lt-txt-center::after {
+  content: '';
+  position: absolute;
+  top: 46px;
+  left: -40px;
+  width: 370px;
+  height: 460px;
+  border: 6px solid #fff;
+  /* z-index: 1; */
+  /* z-index안먹힘-----------------------질문 */
+}
+
+.g2-content-img-box .g2-lt-img-center p:first-child {
+  font-size: 30px;
+  font-weight: normal;
+}
+.g2-content-img-box .g2-lt-img-center p:nth-child(2) {
+  font-size: 48px;
+  font-weight: bold;
+}
+.g2-content-img-box .g2-lt-img-center p:last-child {
+  font-size: 18px;
+}
+.g2-lt-img-brush img {
+  position: absolute;
+  top: 37px;
+  left: 275px;
+}
+.g2-lt-img-btm {
+  padding-top: 24px;
+}
+
+.g2-right-img-box {
+  float: left;
+  margin-left: 20px;
+  padding-top: 50px;
+}
+.g2-right-img-box div ~ div {
+  padding-top: 12px;
+}
+.g2-btm {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.g2-img-left-box-01,
+.g2-img-right-box-01,
+.g2-img-right-box-02 {
+  float: left;
+}
+.g2-img-left-01 img,
+.g2-img-right-01 img,
+.g2-img-right-02 img {
+  filter: brightness(70%);
+}
+.g2-img-left-on-01,
+.g2-img-right-on-01,
+.g2-img-right-on-02 {
+  display: none;
+  /* hover시 display:block으로 변경------------------ */
+}
+.g2-img-right-box-01 {
+  padding: 0 30px;
+}
+.g2-img-box-01 {
+  position: relative;
+}
+
+.g2-txt-left-box-01 {
+  color: #fff;
+}
+.g2-txt-01 {
+  position: absolute;
+  top: 222px;
+  left: 150px;
+  text-align: center;
+  font-family: 'Jost', 'Noto Sans KR', sans-serif;
+}
+.g2-txt-01 p,
+.g2-txt-01-01 p,
+.g2-txt-01-02 p {
+  font-size: 24px;
+}
+.g2-txt-01 strong,
+.g2-txt-01-01 strong,
+.g2-txt-01-02 strong {
+  font-size: 50px;
+}
+.g2-img-right-box-01 {
+  position: relative;
+}
+.g2-txt-01-01 {
+  position: absolute;
+  top: 222px;
+  left: 150px;
+  text-align: center;
+  font-family: 'Jost', 'Noto Sans KR', sans-serif;
+}
+.g2-txt-01-01 p,
+.g2-txt-01-01 strong {
+  color: #fff;
+}
+.g2-txt-01-01 span,
+.g2-txt-01-02 span {
+  font-size: 16px;
+  color: #ddd;
+}
+.g2-txt-left-box-02 {
+  position: relative;
+}
+span.plus_plus-02 {
+  position: absolute;
+  top: 119px;
+  left: 180px;
+  text-indent: -99999em;
+  width: 70px;
+  height: 70px;
+}
+.plus_plus-02::before,
+.plus_plus-02::after {
+  content: '';
+  position: relative;
+  background: #fff;
   opacity: 1;
+  transition-delay: 0.2s;
+  transition: all 0.2s ease-in;
 }
-.pt-img-right-box {
-  /* position: absolute;
-  bottom: 30%;
-  right: 17%; */
+.plus_plus-02::before {
+  position: absolute;
+  left: calc(50% - 1px);
+  top: 0px;
+  bottom: 0px;
+  width: 1px;
 }
-/* 왜 한쪽 이미지만 position:absolute먹고, 나머지 
-다른쪽도 적용하면 왜 이미지가 푸터 밑으로 오는지? */
-/* header가 문제임.. header scrollTop때문에 안됨 */
+.plus_plus-02::after {
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0px;
+  right: 0px;
+  height: 1px;
+}
+.g2-txt-left-box-02 {
+  position: relative;
+}
+span.plus_plus-03 {
+  position: absolute;
+  top: -357px;
+  left: 150px;
+  text-indent: -99999em;
+  width: 70px;
+  height: 70px;
+}
+.plus_plus-03::before,
+.plus_plus-03::after {
+  content: '';
+  position: relative;
+  background: #fff;
+  opacity: 1;
+  transition-delay: 0.2s;
+  transition: all 0.2s ease-in;
+}
+.plus_plus-03::before {
+  position: absolute;
+  left: calc(50% - 1px);
+  top: 0px;
+  bottom: 0px;
+  width: 1px;
+}
+.plus_plus-03::after {
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0px;
+  right: 0px;
+  height: 1px;
+}
 
-/* product_02.html(01번 수정본) */
-
+/* product_01.html */
 .topper-top {
   background-color: #f7f8fb;
 }
@@ -359,7 +579,7 @@ section.sub-content-btm {
 .topper-title h2 {
   font-size: 50px;
   text-align: center;
-  padding: 60px 0 180px;
+  padding: 150px 0 180px;
   font-family: 'Jost', 'Noto Sans KR', sans-serif;
   font-weight: 600;
 }
@@ -367,7 +587,7 @@ section.sub-content-btm {
   content: '';
   display: block;
   position: absolute;
-  top: 187px;
+  top: 147px;
   right: 900px;
   width: 10px;
   height: 10px;
@@ -390,6 +610,7 @@ section.sub-content-btm {
 }
 .topper-btm {
   width: 1200px;
+  height: 500px;
   margin: 0 auto;
   padding: 45px 0 60px;
   color: #fff;
@@ -402,22 +623,37 @@ section.sub-content-btm {
 .topper-img-left-box {
   float: left;
   margin-left: 195px;
-  padding: 0 10px 150px 0;
+  /* padding: 0 10px 150px 0; */
+  padding-right: 10px;
   position: absolute;
   top: -150px;
-  left: 37px;
+  left: 27px;
+  /* transition: all 0.5s ease; */
+}
+.topper-img-left img,
+.topper-img-right img {
+  filter: brightness(80%);
+  /* transition: all 0.5s ease; */
 }
 .topper-img-left-on {
   position: absolute;
-  top: -1px;
-  left: 15px;
+  top: 0px;
+  left: 0px;
   display: none;
+  transition: all 0.5s ease;
   /* hover시 block으로 변경하기---------------------- */
 }
+.topper-img-left-box:hover .topper-img-left-on {
+  display: block;
+}
+.topper-img-right-box:hover .topper-img-right-on {
+  display: block;
+}
+
 .topper-txt {
   position: absolute;
   top: 221px;
-  left: 89px;
+  left: 85px;
   text-align: center;
 }
 .topper-txt-01 {
@@ -437,20 +673,22 @@ section.sub-content-btm {
 
 .topper-img-right-box {
   float: left;
-}
-.topper-img-right-box {
-  float: left;
   padding: 0 10px 150px 0;
   position: absolute;
   top: -150px;
-  left: 610px;
+  left: 630px;
 }
 .topper-img-right-on {
   position: absolute;
-  top: -1px;
-  left: 15px;
+  top: 0;
+  left: 0;
   display: none;
+  transition: all 0.5s ease;
   /* hover시 block으로 변경하기---------------------- */
+}
+
+.topper-img-right-on img {
+  transition: all 0.7s ease;
 }
 span.plus_plus {
   position: absolute;
@@ -483,11 +721,188 @@ span.plus_plus {
   right: 0px;
   height: 1px;
 }
+/* product_02.html */
+.topper-title h4 {
+  font-size: 20px;
+  color: #777;
+  text-align: center;
+  position: absolute;
+  top: 222px;
+  left: 926px;
+}
+.topper-title .topper-line {
+  margin-top: 18px;
+  padding-bottom: 45px;
+  position: relative;
+}
+.topper-title .topper-line::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 40px;
+  background-color: #e5e5e5;
+  position: absolute;
+  bottom: 165px;
+  left: 50%;
+}
+.topper-title .topper-mt {
+  font-size: 50px;
+  text-align: center;
+  padding: 150px 0 180px;
+  font-family: 'Jost', 'Noto Sans KR', sans-serif;
+  font-weight: 600;
+}
+.topper-title .topper-mt::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 147px;
+  right: 800px;
+  width: 10px;
+  height: 10px;
+  background-color: #f39800;
+}
+.topper-img-box-01 {
+  position: relative;
+}
+.topper-img-left-box-01 {
+  float: left;
+  /* margin-left: 175px; */
+  /* padding: 0 10px 150px 0; */
+  padding-right: 10px;
+  position: absolute;
+  top: -150px;
+  left: 0;
+  /* transition: all 0.5s ease; */
+}
+.topper-img-left-01 img,
+.topper-img-right-01 img,
+.topper-img-right-02 img {
+  filter: brightness(80%);
+  /* transition: all 0.5s ease; */
+}
+.topper-img-left-on-01 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+  transition: all 0.5s ease;
+  /* hover시 block으로 변경하기---------------------- */
+}
+.topper-img-left-box-01:hover .topper-img-left-on-01 {
+  display: block;
+}
+.topper-img-right-box-01:hover .topper-img-right-on-01 {
+  display: block;
+}
+.topper-img-right-box-02:hover .topper-img-right-on-02 {
+  display: block;
+}
+.topper-txt-01 {
+  position: absolute;
+  top: 221px;
+  left: 85px;
+  text-align: center;
+}
+.topper-txt-01-01 {
+  position: absolute;
+  top: 221px;
+  left: 100px;
+  text-align: center;
+}
+.topper-txt-01-02 {
+  position: absolute;
+  top: 221px;
+  left: 77px;
+  text-align: center;
+}
+.topper-txt-01 strong {
+  font-size: 50px;
+  margin-top: 15px;
+}
+.topper-txt-01-01 strong {
+  font-size: 50px;
+  margin-top: 15px;
+}
+.topper-txt-01-02 strong {
+  font-size: 50px;
+  margin-top: 15px;
+}
+.topper-img-right-box-01 {
+  float: left;
+  padding: 0 10px 150px 0;
+  position: absolute;
+  top: -150px;
+  left: 410px;
+}
+.topper-img-right-on-01 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  transition: all 0.5s ease;
+  /* hover시 block으로 변경하기---------------------- */
+}
+
+.topper-img-right-on-01 img {
+  transition: all 0.7s ease;
+}
+
+.topper-img-right-box-02 {
+  float: left;
+  padding: 0 10px 150px 0;
+  position: absolute;
+  top: -150px;
+  left: 820px;
+}
+.topper-img-right-on-02 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  transition: all 0.5s ease;
+  /* hover시 block으로 변경하기---------------------- */
+}
+
+.topper-img-right-on-02 img {
+  transition: all 0.7s ease;
+}
+span.plus_plus-01 {
+  position: absolute;
+  top: 119px;
+  left: 150px;
+  text-indent: -99999em;
+  width: 70px;
+  height: 70px;
+}
+.plus_plus-01::before,
+.plus_plus-01::after {
+  content: '';
+  position: relative;
+  background: #fff;
+  opacity: 1;
+  transition-delay: 0.2s;
+  transition: all 0.2s ease-in;
+}
+.plus_plus-01::before {
+  position: absolute;
+  left: calc(50% - 1px);
+  top: 0px;
+  bottom: 0px;
+  width: 1px;
+}
+.plus_plus-01::after {
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0px;
+  right: 0px;
+  height: 1px;
+}
 
 /* signature_mongata.html */
 .header {
   width: 100%;
-  height: 130px;
+  height: 180px;
   background-color: rgb(126, 85, 240);
 }
 .header p {
@@ -1252,6 +1667,16 @@ button {
 }
 
 /* footer */
+/* 임시푸터 */
+.footer {
+  width: 100%;
+  height: 150px;
+  background-color: rosybrown;
+}
+.footer p {
+  color: #fff;
+  font-size: 50px;
+}
 footer {
   background-color: #181b31;
   position: absolute;
