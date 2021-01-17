@@ -16,7 +16,6 @@ body {
   box-sizing: border-box;
   font: 14px/1.3 'Noto Sans KR', Helvetica, Arial, sans-serif;
 }
-
 #wrap {
   height: 100%;
   height: auto;
@@ -33,7 +32,6 @@ header {
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
 }
-
 header.fixed {
   background-color: #fff;
   position: fixed;
@@ -93,7 +91,6 @@ header.fixed .gnb .main-menu li {
 .gnb .submenu li {
   padding: 15px 30px;
   font-weight: normal;
-  /* border: 1px solid #000; */
 }
 .gnb .submenu li:hover {
   background-color: #d7e1e9;
@@ -135,184 +132,43 @@ header.fixed .gnb .main-menu li {
 %를 수치 입력하니 적용됨 footer도 왜 하단에 고정안되는지 모르겠음*/
 
 /* collection_01.html */
-section.sub-content-top,
-section.sub-content-btm {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  width: 1200px;
-  margin: 0 auto;
-  position: relative;
+#basic-container .basic-bg {
   background-color: #cedfe8;
 }
-.sub-content-btm {
-  clear: both;
-}
-
 #basic-container {
-  /* height: 100%;
-  width: 100%; */
   width: 100%;
   height: 100%;
-  background-color: #cedfe8;
 }
-
-.sub-fancy-title img {
-  position: absolute;
-  top: 150px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 57px;
-  margin-top: 60px;
-}
-.sub-text-box {
-  position: relative;
-}
-.sub-text {
-  position: absolute;
-  top: 430px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.sub-text > * {
-  display: block;
+.basic-main-logo {
   text-align: center;
+  padding: 180px 0 80px;
 }
-.sub-text strong {
-  font-size: 24px;
-  margin-bottom: 5px;
+.basic-main-logo img {
+  width: 444px;
 }
-.sub-text .en {
-  font-family: 'Jost', sans-serif;
-  font-weight: bold;
-  color: #fff;
-}
-.sub-text span.en {
-  font-weight: normal;
-  margin-top: 30px;
-}
-.sub-text .ko {
+.basic-txt-ko {
   color: #6ed2ff;
   line-height: 1.2;
   font-size: 16px;
-  font-weight: 80;
 }
-
-.sub-bg-img img {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 320px;
-}
-.sub-bg-img .mobile {
-  display: none;
-}
-.sub-img-item-box {
-  position: relative;
-}
-.sub-img-item-left {
-  position: absolute;
-  top: 350px;
-  left: 10%;
-  margin-top: 30%;
-}
-.sub-img-item-lt img {
-  padding-bottom: 12px;
-}
-.sub-img-item-lc {
+.basic-lt-txt-center {
   width: 370px;
   height: 460px;
   background-color: #01354e;
   position: relative;
   color: #fff;
   padding: 48px 0 0 40px;
+  margin-bottom: 60px;
+  font-family: 'jost', 'Noto Sans KR', Helvetica, Arial, sans-serif;
 }
-.sub-img-item-lc::after {
+.basic-lt-txt-center::after {
   content: '';
   position: absolute;
-  top: 50px;
-  left: -20px;
+  top: 46px;
+  left: -40px;
   width: 370px;
   height: 460px;
   border: 6px solid #fff;
-  z-index: -1;
-}
-
-.sub-img-item-lc-en-txt p {
-  font-size: 30px;
-  font-weight: 100;
-  font-family: 'Cerebri Sans', sans-serif;
-}
-.sub-img-item-lc-en-txt span {
-  font-size: 48px;
-  font-weight: bold;
-  font-family: 'Jost', sans-serif;
-}
-.sub-img-item-lc-ko-txt {
-  margin-top: 30px;
-  font-size: 18px;
-  font-family: 'Cerebri Sans', sans-serif;
-}
-.sub-img-brush {
-  position: absolute;
-  width: 282px;
-  top: 31px;
-  left: 263px;
-  z-index: 1;
-}
-.sub-img-item-lb {
-  margin-top: 80px;
-}
-
-.sub-img-item-right {
-  position: absolute;
-  top: 330px;
-  right: 1%;
-  margin-top: 35%;
-  padding-bottom: 100px;
-}
-.sub-img-item-right div img {
-  padding-bottom: 12px;
-}
-
-/* section sub content btm */
-.sub-content-btm {
-  width: 1200px;
-  height: 700px;
-  position: relative;
-  border: 1px solid black;
-}
-.sub-content-btm p {
-  background-color: rosybrown;
-  padding: 50px;
-  color: #fff;
-  font-size: 50px;
-}
-.sub-mt-img-box {
-  position: relative;
-}
-.sub-mt-img-left-box {
-  position: relative;
-  border: 1px solid red;
-}
-.sub-mt-img-left {
-  /* position: relative; */
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  opacity: 1;
-  /* transition: all 0.7s ease; */
-  top: 470%;
-  left: 20%;
-  /* 질문 bottom:0이 먹지않음 */
-  /* display: block; */
-}
-.sub-mt-img-left-on {
-  position: absolute;
-  top: 500%;
-  left: 10%;
 }
 
 /* collection_02.html */
@@ -320,30 +176,30 @@ section.sub-content-btm {
   width: 100%;
   height: 100%;
 }
-#g2-container .g2-bg {
+.g2-bg {
   background-color: #cfe1cb;
 }
-#g2-container .g2-top {
+.g2-top {
   width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
-#g2-container .g2-main-logo {
+.g2-main-logo {
   text-align: center;
-  padding: 80px 0;
+  padding: 180px 0 80px;
 }
-#g2-container .g2-main-logo img {
+.g2-main-logo img {
   width: 352px;
 }
-#g2-container .g2-title-box {
+.g2-title-box {
   position: relative;
 }
-#g2-container .g2-title-txt-box {
+.g2-title-txt-box {
   position: absolute;
   top: 100px;
   left: 380px;
 }
-#g2-container .g2-title-img-box img:nth-child(2) {
+.g2-title-img-box img:nth-child(2) {
   display: none;
 }
 .g2-title-txt-box .g2-txt-en,
@@ -369,15 +225,11 @@ section.sub-content-btm {
   margin: 0 auto;
   padding: 100px 0;
 }
-.g2-content-img-box {
-}
 .g2-content-img-box .g2-left-img-box {
   float: left;
 }
 .g2-content-img-box .g2-lt-img-top {
   padding-bottom: 12px;
-}
-.g2-content-img-box .g2-lt-img-top img {
 }
 .g2-lt-img-center {
   position: relative;
@@ -403,7 +255,6 @@ section.sub-content-btm {
   /* z-index: 1; */
   /* z-index안먹힘-----------------------질문 */
 }
-
 .g2-content-img-box .g2-lt-img-center p:first-child {
   font-size: 30px;
   font-weight: normal;
@@ -423,7 +274,6 @@ section.sub-content-btm {
 .g2-lt-img-btm {
   padding-top: 24px;
 }
-
 .g2-right-img-box {
   float: left;
   margin-left: 20px;
@@ -435,7 +285,7 @@ section.sub-content-btm {
 .g2-btm {
   width: 1200px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px 0 220px;
 }
 .g2-img-left-box-01,
 .g2-img-right-box-01,
@@ -451,7 +301,39 @@ section.sub-content-btm {
 .g2-img-right-on-01,
 .g2-img-right-on-02 {
   display: none;
-  /* hover시 display:block으로 변경------------------ */
+}
+.g2-img-left-box-01 {
+  position: relative;
+}
+.g2-img-left-on-01 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.g2-img-right-box-01 {
+  position: relative;
+}
+.g2-img-right-on-01 {
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+.g2-img-right-box-02 {
+  position: relative;
+}
+.g2-img-right-on-02 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.g2-img-left-box-01:hover .g2-img-left-on-01 {
+  display: block;
+}
+.g2-img-right-box-01:hover .g2-img-right-on-01 {
+  display: block;
+}
+.g2-img-right-box-02:hover .g2-img-right-on-02 {
+  display: block;
 }
 .g2-img-right-box-01 {
   padding: 0 30px;
@@ -459,7 +341,6 @@ section.sub-content-btm {
 .g2-img-box-01 {
   position: relative;
 }
-
 .g2-txt-left-box-01 {
   color: #fff;
 }
@@ -501,6 +382,20 @@ section.sub-content-btm {
 }
 .g2-txt-left-box-02 {
   position: relative;
+}
+.g2-txt-01-02 p,
+.g2-txt-01-02 strong {
+  color: #fff;
+}
+.g2-txt-left-box-02 {
+  position: relative;
+}
+.g2-txt-01-02 {
+  font-family: 'Jost', 'Noto Sans KR', sans-serif;
+  position: absolute;
+  top: -257px;
+  left: 115px;
+  text-align: center;
 }
 span.plus_plus-02 {
   position: absolute;
@@ -566,6 +461,48 @@ span.plus_plus-03 {
   left: 0px;
   right: 0px;
   height: 1px;
+}
+/* collection_03.html */
+#active-container {
+  width: 100%;
+  height: 100%;
+}
+.active-bg {
+  background-color: #d0d0df;
+}
+.active-main-logo {
+  text-align: center;
+  padding: 180px 0 80px;
+}
+.active-main-logo img {
+  width: 444px;
+}
+.active-txt-ko {
+  color: #b8b8ff;
+  line-height: 1.2;
+  font-size: 16px;
+}
+.active-lt-txt-center {
+  width: 370px;
+  height: 460px;
+  background-color: #1a192f;
+  position: relative;
+  color: #fff;
+  padding: 48px 0 0 40px;
+  margin-bottom: 60px;
+  font-family: 'jost', 'Noto Sans KR', Helvetica, Arial, sans-serif;
+}
+.active-lt-txt-center::after {
+  content: '';
+  position: absolute;
+  top: 46px;
+  left: -40px;
+  width: 370px;
+  height: 460px;
+  border: 6px solid #fff;
+}
+.active-img-box-01 {
+  margin-left: 350px;
 }
 
 /* product_01.html */
@@ -787,7 +724,7 @@ span.plus_plus {
   left: 0px;
   display: none;
   transition: all 0.5s ease;
-  /* hover시 block으로 변경하기---------------------- */
+  /* hover시 block으로 변경하기--------------------질문-- */
 }
 .topper-img-left-box-01:hover .topper-img-left-on-01 {
   display: block;
@@ -841,13 +778,10 @@ span.plus_plus {
   left: 0;
   display: none;
   transition: all 0.5s ease;
-  /* hover시 block으로 변경하기---------------------- */
 }
-
 .topper-img-right-on-01 img {
   transition: all 0.7s ease;
 }
-
 .topper-img-right-box-02 {
   float: left;
   padding: 0 10px 150px 0;
@@ -861,9 +795,7 @@ span.plus_plus {
   left: 0;
   display: none;
   transition: all 0.5s ease;
-  /* hover시 block으로 변경하기---------------------- */
 }
-
 .topper-img-right-on-02 img {
   transition: all 0.7s ease;
 }
@@ -902,7 +834,7 @@ span.plus_plus-01 {
 /* signature_mongata.html */
 .header {
   width: 100%;
-  height: 180px;
+  height: 200px;
   background-color: rgb(126, 85, 240);
 }
 .header p {
@@ -1046,7 +978,6 @@ span.plus_plus-01 {
   display: none;
 }
 .bed-style-txt-box {
-  /* font: 14px/1.3 'Noto Sans KR', Helvetica, Arial, sans-serif; */
   position: absolute;
   top: 7%;
   left: 50%;
@@ -1097,7 +1028,6 @@ span.plus_plus-01 {
 .accordion-item:first-child {
   border-top: 1px solid #e0e1eb;
 }
-
 .accordion-item .accordion-item-heading {
   width: 878px;
   cursor: pointer;
@@ -1106,12 +1036,10 @@ span.plus_plus-01 {
 .accordion-item .accordion-item-heading h4 {
   font-size: 19px;
   color: #060221;
-  /* width: 878px; */
   display: inline-block;
   vertical-align: top;
   font-weight: 600;
 }
-
 .accordion-title {
   padding: 10px 300px 10px 20px;
   display: inline-block;
@@ -1133,10 +1061,7 @@ span.plus_plus-01 {
   font-size: 17px;
   color: #181b31;
   display: inline-block;
-  /* text-align: center; */
-  /* padding-left: 100px; */
 }
-
 .accordion-item {
   margin-left: 195px;
 }
@@ -1222,7 +1147,6 @@ button {
   margin-top: 20px;
 }
 /* store.html */
-
 #store-container .store-main-title {
   font-size: 54px;
   font-family: 'jost', 'Noto Sans KR', Helvetica, Arial, sans-serif;
@@ -1242,7 +1166,6 @@ button {
   width: 10px;
   background-color: #f39800;
 }
-
 .store-bg-box {
   width: 100%;
   height: 480px;
@@ -1359,7 +1282,6 @@ button {
   background: url('../img/sub/img_story_bg2.jpg') center center no-repeat;
   margin-left: 5px;
 }
-
 .store-location-box h6 {
   position: absolute;
   top: 115px;
@@ -1628,13 +1550,11 @@ button {
   float: right;
   width: 652px;
 }
-
 .btn-more-02 {
   padding-top: 30px;
   font-size: 12px;
   letter-spacing: 0.1em;
 }
-
 .about-line-basic-img-box {
   float: left;
 }
@@ -1656,7 +1576,6 @@ button {
   font-size: 12px;
   letter-spacing: 0.1em;
 }
-
 .about-line-basic-box {
   width: 1200px;
   margin: 0 auto;
@@ -1665,23 +1584,11 @@ button {
 .about-line-basic-img-box img {
   width: 652px;
 }
-
 /* footer */
-/* 임시푸터 */
-.footer {
-  width: 100%;
-  height: 150px;
-  background-color: rosybrown;
-}
-.footer p {
-  color: #fff;
-  font-size: 50px;
-}
 footer {
   background-color: #181b31;
   position: absolute;
   width: 100%;
-  /* bottom: 150%; */
 }
 .inner-footer {
   width: 1200px;
@@ -1693,14 +1600,13 @@ footer {
   padding-top: 20px;
 }
 .footer-txt {
-  pxfont-size: 12px;
+  font-size: 12px;
   line-height: 1.6;
   font-weight: bold;
 }
 .copyright {
   margin: 10px 0;
 }
-
 /* top btn */
 #top-btn {
   position: fixed;
@@ -1714,7 +1620,6 @@ footer {
   text-align: center;
   z-index: 999999999999999999999;
 }
-
 #top-btn i {
   color: #fff;
   line-height: 35px;
