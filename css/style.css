@@ -17,6 +17,9 @@ h2 {
   font-weight: 700;
   color: #060221;
 }
+.main-slide-banner img:nth-child(2) {
+  display: none;
+}
 
 /* youtube-container */
 .youtube-container {
@@ -418,6 +421,9 @@ span.plus {
   /* background-color: hsla(31, 21%, 5%, 0.75); */
   filter: brightness(50%);
 }
+.instagram-list div > a > img:hover i {
+  display: block;
+}
 .instagram-list div i {
   font-size: 50px;
   position: absolute;
@@ -433,4 +439,22 @@ span.plus {
 .instagram-list .insta1,
 .instagram-list .insta4 {
   margin-left: 24px;
+}
+
+@media (max-width: 769px) {
+  .main-slide-banner img:nth-child(1) {
+    display: none;
+  }
+  .main-slide-banner img:nth-child(2) {
+    display: block;
+  }
+  /* .youtube-txt .fancy-title {
+    width: 25%;
+  } */
+  .youtube-txt .fancy-title h2 {
+    font-size: 16px;
+  }
+  .bg-youtube {
+    width: 20%;
+  }
 }

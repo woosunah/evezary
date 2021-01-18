@@ -183,3 +183,148 @@ footer {
   color: #fff;
   line-height: 35px;
 }
+
+/* 모바일 반응형 */
+@media (max-width: 769px) {
+  header {
+    position: relative;
+  }
+  header {
+    width: 100%;
+    height: 80px;
+    background-color: #f6f6f6;
+  }
+
+  .mobile-btn-gnb-open::before {
+    content: '';
+    position: absolute;
+    top: 33px;
+    right: 160px;
+    width: 25px;
+    height: 2px;
+    background-color: #222;
+  }
+  .mobile-btn-gnb-open::after {
+    content: '';
+    position: absolute;
+    top: 39px;
+    right: 165px;
+    width: 20px;
+    height: 2px;
+    background-color: #222;
+  }
+  header .mobile-btn-gnb-open span.mobile-menu {
+    position: absolute;
+    top: 45px;
+    right: 160px;
+    width: 25px;
+    height: 2px;
+    background-color: #222;
+  }
+  .mobile-btn-gnb-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 46px;
+    height: 46px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    text-indent: -9999px;
+  }
+  .mobile-btn-gnb-close::before,
+  .mobile-btn-gnb-close::after {
+    content: '';
+    position: absolute;
+    /* gnb에 position:fixed를 해놔서 relative안해줘도됨 */
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 2px;
+    /* background-color: #ff5d2b; */
+  }
+  .mobile-btn-gnb-close::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .mobile-btn-gnb-close::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  header .main-logo {
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+  }
+  header .main-logo a img:first-child {
+    display: none;
+  }
+  header .main-logo img:nth-child(2) {
+    display: block;
+    padding: 15px 200px;
+  }
+  .gnb {
+    padding: 0 15px;
+    float: left;
+    width: 760px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -283px;
+    background-image: linear-gradient(to top left, #474440 0%, #9d846a 100%);
+  }
+  .gnb .main-menu {
+    display: none;
+  }
+
+  .gnb .main-menu > li {
+    float: left;
+    padding: 20px 15px;
+    margin-top: 17px;
+    margin-right: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    position: relative;
+    font-weight: bold;
+  }
+
+  .gnb .main-menu > li:hover {
+    color: #fff;
+  }
+  .gnb .submenu {
+    top: 60px;
+    left: 0;
+    width: 240px;
+    position: absolute;
+    background: #fff;
+    border-top: 1px solid #fff;
+    border-radius: 5px;
+    padding: 20px 0;
+  }
+  .gnb .submenu li {
+    padding: 15px 30px;
+    font-weight: normal;
+    /* border: 1px solid #000; */
+  }
+  .gnb .submenu li:hover {
+    background-color: #d7e1e9;
+  }
+  .gnb .submenu li:hover a {
+    color: #222;
+  }
+  .gnb .submenu li a {
+    color: #797b86;
+  }
+  .gnb .main-menu .submenu {
+    display: none;
+  }
+  .gnb .main-menu > li:hover .submenu {
+    display: block;
+  }
+
+  /* gnb scrollTop hover , color change */
+  .gnb.mouseover .main-menu > li:hover {
+    color: #000;
+  }
+
+  .sns-icon-group {
+    display: none;
+  }
+}
