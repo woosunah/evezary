@@ -327,4 +327,8 @@ footer {
   .sns-icon-group {
     display: none;
   }
+  .gnb.active,
+  .sns-icon-group.active {
+    display: flex;
+  }
 }

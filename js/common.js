@@ -114,30 +114,11 @@ $(function () {
 });
 
 // mobile, submenu dropdown
-// function gnbMenuHandler1() {
-//   // console.log(document.querySelector('html').className);
-//   if (document.querySelector('html').className == 'pc') {
-//     // console.log(this);
-//     if (hoverMenu != null) hoverMenu.classList.remove('on');
-//     this.classList.add('on');
-//     hoverMenu = this;
-//   }
-// // }
-// function gnbMenuHandler2() {
-//   if (document.querySelector('html').className == '.mobile-btn-gnb-open') {
-//     this.classList.toggle('on');
-//     if (this.className.indexOf('on') >= 0) {
-//       hoverMenu = this;
-//     } else {
-//       hoverMenu = null;
-//     }
-//   }
-// }
-// element.addEventListener('mouseleave', function () {
-//   if (hoverMenu != null) hoverMenu.classList.remove('on');
-//   hoverMenu = null;
-// });
-
-// // window.addEventListener('load', function () {
-// //   gnbMenuFnc2(document.querySelector('.gnb'));
-// // });
+function openMobileMenu(element) {
+  element.classList.add('on');
+  return false;
+}
+function closeMobileMenu() {
+  document.querySelector('.mobile-btn-gnb-open').classList.remove('on');
+  return false;
+}

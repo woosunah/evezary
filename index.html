@@ -47,7 +47,7 @@
               <a 
               href="#"
               class="mobile-btn-gnb-open"
-              onclick="this.classList.toggle('on')">
+              onclick="return openMobileMenu(this)">
               <span class="mobile-menu"></span>
             </a>
             <ul class="main-menu">
@@ -76,7 +76,7 @@
             <a 
             href="#"
             class="mobile-btn-gnb-close"
-            onclick="this.classList.toggle('on')">
+            onclick="return closeMobileMenu()">
             <span class="mobile-menu"></span>
           </a>
             <!-- span toggle -->
@@ -142,9 +142,10 @@
         <h2>COLLECTION</h2>
         <div class="collection-list-wrap">
           <div class="clist-left">
-            <a href="#"
-              ><img src="img/collection_img01.jpg" alt="베이직이미지"
-            /></a>
+            <a href="#">
+              <img src="img/collection_img01.jpg" alt="베이직이미지"/>
+              <img src="img/collection_img01_m.jpg" alt="mobile 이미지">
+          </a>
             <div class="clist-lt-txt">
               <h3><img src="img/logo_basic_w.svg" alt="베이직로고" /></h3>
               <a href="/collection 01.html"></a>
