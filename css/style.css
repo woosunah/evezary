@@ -425,9 +425,9 @@ span.plus {
   /* background-color: hsla(31, 21%, 5%, 0.75); */
   filter: brightness(50%);
 }
-.instagram-list div > a > img:hover i {
+/* .instagram-list div > a > img:hover i {
   display: block;
-}
+} */
 .instagram-list div i {
   font-size: 50px;
   position: absolute;
@@ -435,9 +435,9 @@ span.plus {
   left: 50%;
   color: #fff;
   transform: translate(-50%, -50%);
+  opacity: 0;
 }
-.instagram-list img:hover i {
-  visibility: visible;
+.instagram-list div i:hover {
   opacity: 1;
 }
 .instagram-list .insta1,
@@ -446,15 +446,15 @@ span.plus {
 }
 
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .main-slide-banner img:nth-child(1) {
     display: none;
   }
   .main-slide-banner img:nth-child(2) {
     display: block;
   }
-  /* .youtube-txt .fancy-title {
-    width: 25%;
-  } */
   .youtube-txt {
     margin-left: 40px;
   }
