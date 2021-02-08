@@ -300,7 +300,8 @@ header.fixed .gnb .main-menu li {
 .g2-img-left-on-01,
 .g2-img-right-on-01,
 .g2-img-right-on-02 {
-  display: none;
+  opacity: 0;
+  transition: all 0.5s ease;
 }
 .g2-img-left-box-01 {
   position: relative;
@@ -327,13 +328,13 @@ header.fixed .gnb .main-menu li {
   left: 0;
 }
 .g2-img-left-box-01:hover .g2-img-left-on-01 {
-  display: block;
+  opacity: 1;
 }
 .g2-img-right-box-01:hover .g2-img-right-on-01 {
-  display: block;
+  opacity: 1;
 }
 .g2-img-right-box-02:hover .g2-img-right-on-02 {
-  display: block;
+  opacity: 1;
 }
 .g2-img-right-box-01 {
   padding: 0 30px;
@@ -519,13 +520,14 @@ span.plus_plus-03 {
   padding: 150px 0 180px;
   font-family: 'Jost', 'Noto Sans KR', sans-serif;
   font-weight: 600;
+  position: relative;
 }
 .topper-title h2::after {
   content: '';
   display: block;
   position: absolute;
   top: 147px;
-  right: 900px;
+  right: 545px;
   width: 10px;
   height: 10px;
   background-color: #f39800;
@@ -560,17 +562,14 @@ span.plus_plus-03 {
 .topper-img-left-box {
   float: left;
   margin-left: 195px;
-  /* padding: 0 10px 150px 0; */
   padding-right: 10px;
   position: absolute;
   top: -150px;
   left: 27px;
-  /* transition: all 0.5s ease; */
 }
 .topper-img-left img,
 .topper-img-right img {
   filter: brightness(80%);
-  /* transition: all 0.5s ease; */
 }
 .topper-img-left-on {
   position: absolute;
@@ -578,7 +577,6 @@ span.plus_plus-03 {
   left: 0px;
   opacity: 0;
   transition: all 0.5s ease;
-  /* hover시 block으로 변경하기---------------------- */
 }
 .topper-img-left-box:hover .topper-img-left-on {
   opacity: 1;
@@ -619,13 +617,8 @@ span.plus_plus-03 {
   position: absolute;
   top: 0;
   left: 0;
-  display: none;
+  opacity: 0;
   transition: all 0.5s ease;
-  /* hover시 block으로 변경하기---------------------- */
-}
-
-.topper-img-right-on img {
-  transition: all 0.7s ease;
 }
 span.plus_plus {
   position: absolute;
@@ -688,13 +681,14 @@ span.plus_plus {
   padding: 150px 0 180px;
   font-family: 'Jost', 'Noto Sans KR', sans-serif;
   font-weight: 600;
+  position: relative;
 }
 .topper-title .topper-mt::after {
   content: '';
   display: block;
   position: absolute;
   top: 147px;
-  right: 800px;
+  right: 460px;
   width: 10px;
   height: 10px;
   background-color: #f39800;
@@ -704,36 +698,31 @@ span.plus_plus {
 }
 .topper-img-left-box-01 {
   float: left;
-  /* margin-left: 175px; */
-  /* padding: 0 10px 150px 0; */
   padding-right: 10px;
   position: absolute;
   top: -150px;
   left: 0;
-  /* transition: all 0.5s ease; */
 }
 .topper-img-left-01 img,
 .topper-img-right-01 img,
 .topper-img-right-02 img {
   filter: brightness(80%);
-  /* transition: all 0.5s ease; */
 }
 .topper-img-left-on-01 {
   position: absolute;
   top: 0px;
   left: 0px;
-  display: none;
+  opacity: 0;
   transition: all 0.5s ease;
-  /* hover시 block으로 변경하기--------------------질문-- */
 }
 .topper-img-left-box-01:hover .topper-img-left-on-01 {
-  display: block;
+  opacity: 1;
 }
 .topper-img-right-box-01:hover .topper-img-right-on-01 {
-  display: block;
+  opacity: 1;
 }
 .topper-img-right-box-02:hover .topper-img-right-on-02 {
-  display: block;
+  opacity: 1;
 }
 .topper-txt-01 {
   position: absolute;
@@ -776,11 +765,8 @@ span.plus_plus {
   position: absolute;
   top: 0;
   left: 0;
-  display: none;
+  opacity: 0;
   transition: all 0.5s ease;
-}
-.topper-img-right-on-01 img {
-  transition: all 0.7s ease;
 }
 .topper-img-right-box-02 {
   float: left;
@@ -793,11 +779,8 @@ span.plus_plus {
   position: absolute;
   top: 0;
   left: 0;
-  display: none;
+  opacity: 0;
   transition: all 0.5s ease;
-}
-.topper-img-right-on-02 img {
-  transition: all 0.7s ease;
 }
 span.plus_plus-01 {
   position: absolute;
@@ -859,12 +842,13 @@ span.plus_plus-01 {
 }
 .mongata-title .title-bed-1 {
   font-size: 24px;
-  font-weight: 100;
   margin-left: 10px;
+  font-weight: 300;
 }
 .mongata-title .bed-price {
   margin-left: 170px;
   font-size: 32px;
+  font-weight: 300;
 }
 .bed-price-box {
   position: relative;

@@ -275,7 +275,7 @@ span.plus {
   position: absolute;
   top: 240px;
   left: 120px;
-  font-weight: 100;
+  font-weight: 500;
   font-size: 30px;
   color: #fff;
 }
@@ -445,6 +445,7 @@ span.plus {
   margin-left: 24px;
 }
 
+/* 태블릿 반응형 */
 @media (max-width: 768px) {
   body {
     overflow-x: hidden;
@@ -793,5 +794,388 @@ span.plus {
   }
   .footer-txt {
     font-size: 12px;
+  }
+}
+
+/* 모바일 반응형 */
+@media (max-width: 480px) {
+  .main-slide-banner img:nth-child(1) {
+    display: none;
+  }
+  .main-slide-banner img:nth-child(2) {
+    display: block;
+  }
+  .youtube-container {
+    height: 380px;
+  }
+  .youtube-txt {
+    margin-left: 25px;
+  }
+  .youtube-txt .fancy-title {
+    margin-top: 5px;
+  }
+  .fancy-title h2 {
+    font-size: 10px;
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+  }
+  .fancy-title h3 {
+    font-size: 16px;
+    color: #fae6cc;
+    margin-bottom: 30px;
+  }
+  .bg-youtube {
+    position: relative;
+  }
+  .bg-youtube img {
+    width: 280px;
+    margin-top: 20px;
+  }
+  .bg-youtube-playbtn {
+    position: absolute;
+    top: 80px;
+    left: 180px;
+  }
+  .bg-youtube-playbtn a {
+    background-color: #ff0000;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    z-index: 99;
+  }
+  .bg-youtube-playbtn a i {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: -10px;
+    left: -12px;
+  }
+  .playbtn-outline {
+    position: absolute;
+    top: 70px;
+    left: 120px;
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 50%;
+  }
+  .collection-list-wrap {
+    height: 1000px;
+  }
+  .collection-list {
+    position: relative;
+  }
+  .collection-list h2 {
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    left: 135px;
+    z-index: 1;
+  }
+  .collection-list h2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 59px;
+    left: 185px;
+    width: 10px;
+    height: 10px;
+    background-color: #f39800;
+  }
+  .collection-list-wrap {
+    margin-top: 150px;
+  }
+
+  .clist-left a img:nth-child(1) {
+    display: none;
+  }
+  .clist-left a img:nth-child(2) {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 35px;
+    width: 400px;
+  }
+  .clist-left {
+    position: relative;
+  }
+
+  .clist-lt-txt img {
+    height: 22px;
+    position: absolute;
+    top: -80px;
+    left: 18px;
+  }
+  .clist-lt-txt .collection-txt {
+    font-size: 14px;
+    margin: -40px 0 0 35px;
+  }
+  .collection-right-wrap {
+    position: relative;
+  }
+  .clist-right-top img {
+    position: absolute;
+    top: 420px;
+    left: -582px;
+    z-index: 1;
+    width: 400px;
+  }
+  .clist-rt-top-txt {
+    position: relative;
+  }
+  .clist-rt-top-txt img {
+    height: 22px;
+    position: absolute;
+    top: 620px;
+    left: -450px;
+  }
+  .clist-rt-top-txt .collection-txt {
+    position: absolute;
+    top: 630px;
+    left: -365px;
+    z-index: 1;
+    font-size: 14px;
+  }
+  .clist-right-btm {
+    position: relative;
+  }
+  .clist-right-btm img {
+    position: absolute;
+    top: 680px;
+    left: -582px;
+    z-index: 1;
+    width: 400px;
+  }
+  .clist-rt-btm-txt {
+    position: relative;
+  }
+  .clist-rt-btm-txt img {
+    height: 22px;
+    position: absolute;
+    top: 880px;
+    left: -430px;
+  }
+  .clist-rt-btm-txt .collection-txt {
+    position: absolute;
+    top: 890px;
+    left: -350px;
+    z-index: 1;
+    font-size: 14px;
+  }
+  .products-list {
+    position: relative;
+    height: 700px;
+  }
+  .products-list h2 {
+    position: absolute;
+    top: 0;
+    left: 170px;
+    z-index: 1;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .products-list h2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 63px;
+    left: 160px;
+    width: 10px;
+    height: 10px;
+    background-color: #f39800;
+  }
+  .plist-left img,
+  .plist-center img,
+  .plist-right img {
+    width: 195px;
+  }
+  .plist-left {
+    position: absolute;
+    top: 150px;
+    left: 25px;
+  }
+  .plist-center {
+    position: absolute;
+    top: 150px;
+    left: -100px;
+  }
+  .plist-right {
+    position: absolute;
+    top: 430px;
+    left: -657px;
+    z-index: 1;
+  }
+  span.plus {
+    position: absolute;
+    top: 70px;
+    left: 75px;
+    text-indent: -99999em;
+    width: 50px;
+    height: 50px;
+  }
+  .plus::before,
+  .plus::after {
+    content: '';
+    position: relative;
+    background: #fff;
+    opacity: 1;
+    transition-delay: 0.2s;
+    transition: all 0.2s ease-in;
+  }
+  .plus::before {
+    position: absolute;
+    left: calc(50% - 1px);
+    top: 0px;
+    bottom: 0px;
+    width: 1px;
+  }
+  .plus::after {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0px;
+    right: 0px;
+    height: 1px;
+  }
+  .products-list h3 {
+    position: absolute;
+    top: 140px;
+    left: 65px;
+    font-weight: 100;
+    font-size: 20px;
+    color: #fff;
+  }
+  .products-list .plist-center h3 {
+    position: absolute;
+    top: 140px;
+    left: 57px;
+    font-weight: 100;
+    font-size: 20px;
+    color: #fff;
+  }
+  .lab-container h2 {
+    font-size: 35px;
+  }
+  .lab-container h2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 560px;
+    width: 10px;
+    height: 10px;
+    background-color: #f39800;
+  }
+  .lab-img-left {
+    width: 100%;
+    height: 430px;
+    background-size: cover;
+    background-position: center center;
+  }
+  .lab-item-group {
+    position: relative;
+  }
+  .lab-img-right {
+    position: absolute;
+    bottom: 0px;
+    background-image: none;
+    width: 100%;
+    height: 230px;
+    background-color: #030825;
+  }
+  .lab-top-title {
+    position: absolute;
+    bottom: -10px;
+    left: 230px;
+  }
+  .lab-top-title h3 img {
+    width: 150px;
+  }
+  .lab-top-title .x-icon::before,
+  .lab-top-title .x-icon::after {
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+  }
+  .lab-top-title .lab-top-txt {
+    font-size: 16px;
+    margin: 3px 0 0 15px;
+  }
+  .lab-top-title > h3 {
+    border-bottom: 1px solid #ffffff87;
+    /* padding-bottom: 10px; */
+    width: 300px;
+  }
+  .lab-btm-txt a h3 {
+    font-size: 34px;
+    margin-top: -30px;
+    text-align: center;
+  }
+  .lab-btm-txt p {
+    font-size: 12px;
+    text-align: center;
+    line-height: 2;
+  }
+  .instagram-list-wrap {
+    position: relative;
+    height: 800px;
+  }
+  .instagram-container img {
+    width: 30px;
+    position: absolute;
+    top: 5px;
+    left: -40px;
+  }
+  .instagram-container h2 {
+    font-size: 24px;
+    position: absolute;
+    top: -85px;
+    left: 170px;
+    z-index: 1;
+    padding: 0;
+    font-size: 30px;
+  }
+  .instagram-container h2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 130px;
+    width: 10px;
+    height: 10px;
+    background-color: #f39800;
+  }
+  .instagram-list {
+    margin-top: 150px;
+  }
+  .instagram-list div > a > img {
+    width: 180px;
+    padding: 0;
+    margin: 0;
+  }
+  .insta2 a img,
+  .insta5 a img {
+    position: absolute;
+    left: -180px;
+  }
+  .insta3 a img {
+    position: absolute;
+    top: 426px;
+    left: -788px;
+    z-index: 1;
+  }
+  .insta6 a img {
+    position: absolute;
+    top: 215px;
+    left: -575px;
+  }
+  .inner-footer {
+    width: 260px;
+  }
+  .footer-txt {
+    font-size: 11px;
   }
 }
