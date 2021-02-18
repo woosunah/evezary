@@ -1031,20 +1031,33 @@ span.plus_plus-01 {
 .accordion-title:hover {
   color: #f39800;
 }
+.accordion-toggle-btn {
+  font-size: 13px;
+}
 .accordion-item .accordion-toggle-btn {
   margin-left: 442px;
+  position: relative;
+  top: -2px;
 }
 .accordion-item .accordion-toggle-btn-1 {
   margin-left: 482px;
-  font-size: 17px;
+  font-size: 13px;
   color: #060221;
   display: inline-block;
   vertical-align: top;
+  position: relative;
+  top: 5px;
+  right: 0;
 }
-.accordion-item .accordion-toggle-btn i {
-  font-size: 17px;
-  color: #181b31;
-  display: inline-block;
+.accordion-title {
+  position: relative;
+}
+
+.accordion-toggle-btn-a {
+  font-size: 13px;
+  position: absolute;
+  top: 14px;
+  right: -165px;
 }
 .accordion-item {
   margin-left: 195px;
@@ -1129,8 +1142,12 @@ button {
   top: 33px;
   right: 63px;
   margin-top: 20px;
+  cursor: pointer;
 }
 /* store.html */
+#store-container .store-main-title-box {
+  /* position: relative; */
+}
 #store-container .store-main-title {
   font-size: 54px;
   font-family: 'jost', 'Noto Sans KR', Helvetica, Arial, sans-serif;
@@ -1147,7 +1164,7 @@ button {
   top: 156px;
   right: 860px;
   height: 10px;
-  width: 10px;
+
   background-color: #f39800;
 }
 .store-bg-box {
@@ -1462,60 +1479,42 @@ button {
   position: relative;
 }
 /* more-btn */
-.btn-more-01 .btn-line-before {
+.btn-more-01 .btn-line-before,
+.btn-more-02 .btn-line-before,
+.btn-more-03 .btn-line-before {
   width: 30px;
   height: 2px;
   background-color: #323138;
-  position: absolute;
-  top: 7px;
-  left: 0;
+  display: inline-block;
+  transition: all 1s;
+  position: relative;
+  top: -4px;
 }
-.btn-txt {
-  position: absolute;
-  top: 0;
-  left: 37px;
+.btn-line-before-box:hover .go-shot {
+  width: 0 !important;
 }
-.btn-txt-after {
-  position: absolute;
-  top: 0;
-  left: 37px;
+
+.btn-line-before-box:hover .go-long {
+  width: 30px !important;
+}
+
+.btn-line-after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  display: inline-block;
+  border: 1px solid #323138;
+  position: relative;
+  top: -4px;
+  transition: all 1s;
 }
 .btn-line-after-box {
   display: none;
 }
-.btn-line-before-box:hover {
-  opacity: 0;
-  cursor: pointer;
-  transition: all 0.5s ease;
-  animation: slide 2s;
+.btn-txt {
+  position: relative;
+  display: inline-block;
 }
-.btn-line-before-box:hover .btn-line-after-box {
-  animation: slide 2s;
-  opacity: 1;
-  cursor: pointer;
-  transform-origin: right;
-  right: -74px;
-}
-@keyframes slide {
-  0% {
-    margin-left: 74px;
-  }
-  100% {
-    margin-left: 0;
-  }
-}
-.btn-line-after {
-  content: '';
-  width: 30px;
-  height: 2px;
-  display: block;
-  background-color: #323138;
-  position: absolute;
-  top: 7px;
-  left: 78px;
-  border: 1px solid red;
-}
-/* btn btn btn ------------------------------------- */
 
 .about-line-g2 {
   width: 1200px;

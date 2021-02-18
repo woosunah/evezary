@@ -68,7 +68,7 @@ header.fixed .main-logo img:nth-child(2) {
 }
 .gnb {
   padding: 0 15px;
-  float: left;
+  /* float: left; */
   width: 760px;
   position: absolute;
   top: 0;
@@ -167,7 +167,6 @@ footer {
 }
 
 #top-btn {
-  position: fixed;
   bottom: 10px;
   right: 2%;
   width: 35px;
@@ -192,12 +191,47 @@ footer {
     height: 80px;
     background-color: #f6f6f6;
   }
+  .navi-bar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    height: 100vh;
+    width: 400px;
+    background-image: linear-gradient(to top left, #474440 0%, #9d846a 100%);
+    z-index: 999;
+    right: 0;
+    transform: translateX(400px);
+    transition: all 1s;
+    /* text-indent: -99999; */
+  }
+  .open {
+    transform: translateX(0);
+  }
+
+  .gnb {
+    position: absolute;
+    top: 10px;
+    right: -130px;
+    border: 1px solid blue;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+  }
+  .mobile-btn-gnb-open {
+    position: absolute;
+    top: 10px;
+    right: 130px;
+    border: 1px solid red;
+    width: 40px;
+    height: 40px;
+  }
 
   .mobile-btn-gnb-open::before {
     content: '';
     position: absolute;
-    top: 33px;
-    right: 160px;
+    top: 15px;
+    right: 0px;
     width: 25px;
     height: 2px;
     background-color: #222;
@@ -205,20 +239,21 @@ footer {
   .mobile-btn-gnb-open::after {
     content: '';
     position: absolute;
-    top: 39px;
-    right: 165px;
+    top: 22px;
+    right: 0px;
     width: 20px;
     height: 2px;
     background-color: #222;
   }
   header .mobile-btn-gnb-open span.mobile-menu {
     position: absolute;
-    top: 45px;
-    right: 160px;
+    top: 29px;
+    right: 0px;
     width: 25px;
     height: 2px;
     background-color: #222;
   }
+
   .mobile-btn-gnb-close {
     position: absolute;
     top: 10px;
@@ -262,14 +297,14 @@ footer {
     display: block;
   }
   .gnb {
-    padding: 0 15px;
+    /* padding: 0 15px;
     float: left;
     width: 760px;
     position: absolute;
     top: 0;
     left: 50%;
     margin-left: -283px;
-    background-image: linear-gradient(to top left, #474440 0%, #9d846a 100%);
+    background-image: linear-gradient(to top left, #474440 0%, #9d846a 100%); */
   }
   .gnb .main-menu {
     display: none;

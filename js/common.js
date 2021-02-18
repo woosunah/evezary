@@ -68,40 +68,6 @@ $(function () {
   // });
 });
 
-// accordion panel
-
-//자바스크립트 버전 'a태그'만 선택
-// function gnbMenuFnc2(element) {
-//   // console.log(element);
-//   var menuList1 = element.children;
-//   var hoverMenu = null;
-
-//   for (var i = 0; i < menuList1.length; i++) {
-//     // console.log(menuList1[i].children[0]);
-//     menuList1[i].children[0].addEventListener('mouseover', gnbMenuHandler1);
-//     menuList1[i].children[0].addEventListener('click', gnbMenuHandler2);
-//   }
-
-//   // pc or mobile에서 서브메뉴 클릭 시 서브메뉴가 펼쳐지는 효과
-//   function gnbMenuHandler1() {
-//     // console.log(document.querySelector('html').className);
-//     if (document.querySelector('accordion-content').className == 'pc') {
-//       // console.log(this);
-//       if (hoverMenu != null) hoverMenu.classList.remove('on');
-//       this.classList.add('on');
-//       hoverMenu = this;
-//     }
-//   }
-
-//   element.addEventListener('mouseleave', function () {
-//     if (hoverMenu != null) hoverMenu.classList.remove('on');
-//     hoverMenu = null;
-//   });
-// }
-// window.addEventListener('load', function () {
-//   gnbMenuFnc2(document.querySelector('#gnb'));
-// });
-
 $(function () {
   $('.accordion-content').hide();
   $('.accordion-item-heading').click(function () {
@@ -131,3 +97,14 @@ toggleBtn.addEventListener('click', () => {
   menu.classList.toggle('active');
   icons.classList.toggle('active');
 });
+
+let isNaviOpen = false;
+function naviOpen() {
+  const naviBar = document.querySelector('#wrap > div.navi-bar');
+  isNaviOpen = !isNaviOpen;
+  if (isNaviOpen) {
+    naviBar.classList.add('open');
+  } else {
+    naviBar.classList.remove('open');
+  }
+}
