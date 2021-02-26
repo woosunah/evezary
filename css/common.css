@@ -66,6 +66,9 @@ header.fixed .main-logo img:nth-child(2) {
 .main-logo img:nth-child(2) {
   display: none;
 }
+.mobile-menu-icon {
+  display: none;
+}
 .gnb {
   padding: 0 15px;
   /* float: left; */
@@ -191,94 +194,9 @@ footer {
     height: 80px;
     background-color: #f6f6f6;
   }
-  .navi-bar {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    height: 100vh;
-    width: 400px;
-    background-image: linear-gradient(to top left, #474440 0%, #9d846a 100%);
-    z-index: 999;
-    right: 0;
-    transform: translateX(400px);
-    transition: all 1s;
-    /* text-indent: -99999; */
-  }
-  .open {
-    transform: translateX(0);
-  }
 
-  .gnb {
-    position: absolute;
-    top: 10px;
-    right: -130px;
-    border: 1px solid blue;
-    width: 50px;
-    height: 50px;
-    margin: 0;
-    padding: 0;
-  }
-  .mobile-btn-gnb-open {
-    position: absolute;
-    top: 10px;
-    right: 130px;
-    border: 1px solid red;
-    width: 40px;
-    height: 40px;
-  }
-
-  .mobile-btn-gnb-open::before {
-    content: '';
-    position: absolute;
-    top: 15px;
-    right: 0px;
-    width: 25px;
-    height: 2px;
-    background-color: #222;
-  }
-  .mobile-btn-gnb-open::after {
-    content: '';
-    position: absolute;
-    top: 22px;
-    right: 0px;
-    width: 20px;
-    height: 2px;
-    background-color: #222;
-  }
-  header .mobile-btn-gnb-open span.mobile-menu {
-    position: absolute;
-    top: 29px;
-    right: 0px;
-    width: 25px;
-    height: 2px;
-    background-color: #222;
-  }
-
-  .mobile-btn-gnb-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 46px;
-    height: 46px;
-    border: 1px solid #fff;
-    border-radius: 50px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-    text-indent: -9999px;
-  }
-  .mobile-btn-gnb-close::before,
-  .mobile-btn-gnb-close::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 40px;
-    height: 2px;
-  }
-  .mobile-btn-gnb-close::before {
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-  .mobile-btn-gnb-close::after {
-    transform: translate(-50%, -50%) rotate(-45deg);
+  .bx-wrapper img {
+    width: 100%;
   }
   header .main-logo {
     z-index: 10;
@@ -292,22 +210,77 @@ footer {
     display: block;
     padding: 15px 200px;
   }
-  .main-menu.active,
-  .sns-icon-group.active {
-    display: block;
+  .main-menu-wrap {
+    overflow-y: hidden;
   }
   .gnb {
-    /* padding: 0 15px;
-    float: left;
-    width: 760px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -283px;
-    background-image: linear-gradient(to top left, #474440 0%, #9d846a 100%); */
+    position: relative;
+    margin-left: 0;
+    left: 0;
   }
-  .gnb .main-menu {
-    display: none;
+  .gnb .main-menu li {
+    width: 100%;
+    display: block;
+    margin: 5px 50px;
+    text-align: left;
+    margin-right: 10px;
+  }
+  .gnb .main-menu li:first-child {
+    margin-top: 150px;
+  }
+  .gnb .main-menu li a {
+    font-size: 16px;
+    float: left;
+  }
+  .main-menu-wrap {
+    width: 100vw;
+  }
+  .main-menu {
+    position: fixed;
+    width: 400px;
+    height: 100vh;
+    background-image: linear-gradient(to top left, #474440 0%, #9d846a 100%);
+    top: 80px;
+    right: -100%;
+    transition: all 1s;
+    z-index: 9999999999;
+  }
+  .open {
+    right: 0;
+    transition: all 1s;
+  }
+  .mobile-menu-icon {
+    display: block;
+  }
+  .mobile-menu-icon i {
+    font-size: 18px;
+  }
+  .mobile-btn-gnb-open {
+    position: absolute;
+    top: 15px;
+    right: 80px;
+    width: 50px;
+    height: 50px;
+    z-index: 9999;
+  }
+  .mobile-btn-gnb-open::before,
+  .mobile-btn-gnb-open::after,
+  .mobile-menu::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    width: 36px;
+    height: 2px;
+    background-color: #222;
+    margin-left: -18px;
+  }
+  .mobile-btn-gnb-open::before {
+    top: 29px;
+  }
+  .mobile-menu::before {
+    top: 22px;
+    width: 29px;
   }
 
   .gnb .main-menu > li {
@@ -324,28 +297,37 @@ footer {
     color: #fff;
   }
   .gnb .submenu {
-    top: 60px;
-    left: 0;
-    width: 240px;
-    position: absolute;
-    background: #fff;
-    border-top: 1px solid #fff;
-    border-radius: 5px;
-    padding: 20px 0;
+    border-top: none;
+    background: none;
+    background-color: transparent;
+    position: relative;
+    top: 0;
   }
   .gnb .submenu li {
-    padding: 15px 30px;
     font-weight: normal;
-    /* border: 1px solid #000; */
+    position: relative;
+    top: -150px;
+    left: -40px;
+    padding: 20px;
+  }
+  .mobile-submenu1-drop:hover {
+    height: 200px;
+  }
+  .mobile-submenu2-drop:hover {
+    height: 250px;
   }
   .gnb .submenu li:hover {
-    background-color: #d7e1e9;
+    background-color: transparent;
   }
   .gnb .submenu li:hover a {
-    color: #222;
+    color: #fff;
+    font-weight: bold;
   }
   .gnb .submenu li a {
-    color: #797b86;
+    color: #fff;
+    font-weight: 100;
+    width: 100%;
+    font-size: 15px;
   }
   .gnb .main-menu .submenu {
     display: none;
@@ -362,10 +344,6 @@ footer {
   .sns-icon-group {
     display: none;
   }
-  .gnb.active,
-  .sns-icon-group.active {
-    display: flex;
-  }
 }
 /* 모바일 반응형 */
 @media (max-width: 480px) {
@@ -375,60 +353,6 @@ footer {
     height: 60px;
     background-color: #f6f6f6;
   }
-  .mobile-btn-gnb-open::before {
-    content: '';
-    position: absolute;
-    top: 25px;
-    left: 485px;
-    width: 15px;
-    height: 2px;
-    background-color: #222;
-  }
-  .mobile-btn-gnb-open::after {
-    content: '';
-    position: absolute;
-    top: 30px;
-    left: 485px;
-    width: 12px;
-    height: 2px;
-    background-color: #222;
-  }
-  header .mobile-btn-gnb-open span.mobile-menu {
-    position: absolute;
-    top: 35px;
-    left: 485px;
-    width: 15px;
-    height: 2px;
-    background-color: #222;
-  }
-  .mobile-btn-gnb-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 46px;
-    height: 46px;
-    border: 1px solid #fff;
-    border-radius: 50px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-    text-indent: -9999px;
-  }
-  .mobile-btn-gnb-close::before,
-  .mobile-btn-gnb-close::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 40px;
-    height: 2px;
-    /* background-color: #ff5d2b; */
-  }
-  .mobile-btn-gnb-close::before {
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-  .mobile-btn-gnb-close::after {
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
-
   header .main-logo {
     z-index: 10;
     margin: 0;

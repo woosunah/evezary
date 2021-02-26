@@ -79,28 +79,9 @@ $(function () {
   });
 });
 
-// mobile, submenu dropdown
-// function openMobileMenu(element) {
-//   element.classList.add('on');
-//   return false;
-// }
-// function closeMobileMenu() {
-//   document.querySelector('.main-menu').classList.remove('on');
-//   return false;
-// }
-
-const toggleBtn = document.querySelector('.mobile-btn-gnb-open');
-const menu = document.querySelector('.main-menu');
-const icons = document.querySelector('.sns-icon-group');
-
-toggleBtn.addEventListener('click', () => {
-  menu.classList.toggle('active');
-  icons.classList.toggle('active');
-});
-
 let isNaviOpen = false;
 function naviOpen() {
-  const naviBar = document.querySelector('#wrap > div.navi-bar');
+  const naviBar = document.querySelector('.main-menu');
   isNaviOpen = !isNaviOpen;
   if (isNaviOpen) {
     naviBar.classList.add('open');
