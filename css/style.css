@@ -725,18 +725,19 @@ span.plus {
   .instagram-list-wrap {
     position: relative;
     width: 480px;
+    height: auto;
   }
   .instagram-container img {
     width: 30px;
     position: absolute;
     top: 0;
-    left: -40px;
+    left: -35px;
   }
   .instagram-container h2 {
-    font-size: 24px;
+    font-size: 30px;
     position: absolute;
     top: -85px;
-    left: 300px;
+    left: 180px;
     z-index: 1;
     padding: 0;
     font-size: 30px;
@@ -770,6 +771,8 @@ span.plus {
   }
   .instagram-list {
     width: 748px;
+    /* border: 1px solid red; */
+    margin-left: -110px;
   }
   .inner-footer {
     width: 289px;
